@@ -8,6 +8,18 @@ import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter } fr
 const Combo = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-yellow-50">
+      {/* Sticky Buy Now Button */}
+      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
+        <Button className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 animate-pulse">
+          <span className="relative flex items-center">
+            💡 Download Combo Blueprint
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-bounce">
+              Best Value
+            </span>
+          </span>
+        </Button>
+      </div>
+
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +44,7 @@ const Combo = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <div className="inline-flex items-center px-6 py-3 bg-orange-100 rounded-full text-orange-800 text-sm font-medium mb-6 animate-pulse">
-              🌟 BEST VALUE
+              💡 BEST VALUE
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               <span className="text-orange-600">3 Subjects.</span> <span className="text-yellow-600">1 Smart Guide.</span>
