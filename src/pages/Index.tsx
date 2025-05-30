@@ -17,9 +17,9 @@ const Index = () => {
               <span className="ml-2 text-sm text-gray-500">Blueprint</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <Link to="/maths" className="text-gray-700 hover:text-blue-600 transition-colors">Maths</Link>
-              <Link to="/science" className="text-gray-700 hover:text-blue-600 transition-colors">Science</Link>
-              <Link to="/social" className="text-gray-700 hover:text-blue-600 transition-colors">Social</Link>
+              <Link to="/maths" className="text-gray-700 hover:text-purple-600 transition-colors">Maths</Link>
+              <Link to="/science" className="text-gray-700 hover:text-teal-600 transition-colors">Science</Link>
+              <Link to="/social" className="text-gray-700 hover:text-orange-600 transition-colors">Social</Link>
               <Link to="/combo" className="text-gray-700 hover:text-blue-600 transition-colors">Combo</Link>
             </div>
           </div>
@@ -36,17 +36,17 @@ const Index = () => {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-              Prep Less, <span className="text-blue-600">Score More</span>
+              Designed for Students Who Want to 
               <br />
-              <span className="text-green-600">Strategically</span>
+              <span className="text-blue-600">Plan</span>, Not <span className="text-red-500">Cram</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in">
-              Crafted for students who need to plan, not start from scratch. 
-              Focus on what matters most for CBSE Class 10 boards.
+              Strategic exam planning for CBSE Class 10 students. 
+              Focus on what matters most based on 10 years of question paper trends.
             </p>
             <div className="flex justify-center mb-12 animate-fade-in">
               <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <Link to="/combo">Explore All Blueprints</Link>
+                <Link to="/combo">View All Blueprints</Link>
               </Button>
             </div>
           </div>
@@ -63,13 +63,13 @@ const Index = () => {
             {/* Maths Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 h-32 rounded-lg mb-4 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-32 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-white text-2xl font-bold">📊</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
                 <p className="text-gray-600 mb-4">Strategic focus on high-scoring topics and formula patterns</p>
-                <Button asChild variant="outline" className="w-full group-hover:bg-blue-50 group-hover:border-blue-300">
-                  <Link to="/maths">View Maths Blueprint</Link>
+                <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
+                  <Link to="/maths">Explore Maths</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -77,13 +77,13 @@ const Index = () => {
             {/* Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-green-500 to-green-600 h-32 rounded-lg mb-4 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-32 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-white text-2xl font-bold">🔬</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
                 <p className="text-gray-600 mb-4">Physics, Chemistry, Biology - All covered strategically</p>
-                <Button asChild variant="outline" className="w-full group-hover:bg-green-50 group-hover:border-green-300">
-                  <Link to="/science">View Science Blueprint</Link>
+                <Button asChild variant="outline" className="w-full group-hover:bg-teal-50 group-hover:border-teal-300">
+                  <Link to="/science">Explore Science</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -91,29 +91,29 @@ const Index = () => {
             {/* Social Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-32 rounded-lg mb-4 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-32 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-white text-2xl font-bold">🗺️</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
                 <p className="text-gray-600 mb-4">History, Geography, Civics, Economics made strategic</p>
-                <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
-                  <Link to="/social">View Social Blueprint</Link>
+                <Button asChild variant="outline" className="w-full group-hover:bg-orange-50 group-hover:border-orange-300">
+                  <Link to="/social">Explore Social</Link>
                 </Button>
               </CardContent>
             </Card>
 
             {/* Combo Card */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-yellow-50 shadow-lg relative overflow-hidden">
-              <div className="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
-                BEST VALUE
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 shadow-lg relative overflow-hidden">
+              <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
+                BEST VALUE 💡
               </div>
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-orange-500 to-yellow-500 h-32 rounded-lg mb-4 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-32 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-white text-2xl font-bold">🌟</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
                 <p className="text-gray-600 mb-4">All 3 subjects + bonus planning tools</p>
-                <Button asChild className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+                <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
                   <Link to="/combo">Get Combo Blueprint</Link>
                 </Button>
               </CardContent>
@@ -134,36 +134,36 @@ const Index = () => {
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
                 <TrendingUp className="w-8 h-8 text-blue-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">10-Year Trend Analysis</h3>
-              <p className="text-gray-600">Based on actual CBSE papers from 2014-2024</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">📌 Based on 10-Year Trend Analysis</h3>
+              <p className="text-gray-600">Built using CBSE past paper trends to highlight scoring topics</p>
             </div>
             <div className="text-center group">
               <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                 <Target className="w-8 h-8 text-green-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Clarity, Not Coverage</h3>
-              <p className="text-gray-600">Focus on what matters, skip what doesn't</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🧠 Helps You Prioritize</h3>
+              <p className="text-gray-600">Don't guess what to revise. We guide you to what matters</p>
             </div>
             <div className="text-center group">
               <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
                 <CheckCircle className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Strategic Prioritization</h3>
-              <p className="text-gray-600">Know exactly what not to skip</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">📋 Not a Textbook</h3>
+              <p className="text-gray-600">We don't explain. We highlight. You learn smarter</p>
             </div>
             <div className="text-center group">
               <div className="bg-orange-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
                 <Clock className="w-8 h-8 text-orange-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">No Textbook Clutter</h3>
-              <p className="text-gray-600">Just what you must not ignore</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🎓 Student-Focused</h3>
+              <p className="text-gray-600">Crafted for students who need to plan, not start from scratch</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Promo Strip */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-green-600">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Ready to Study Smarter, Not Harder?

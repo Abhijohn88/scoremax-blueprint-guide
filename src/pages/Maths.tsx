@@ -7,20 +7,20 @@ import { ArrowLeft, Target, Clock, CheckCircle, Users } from 'lucide-react';
 
 const Maths = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center">
               <ArrowLeft className="w-5 h-5 mr-2 text-gray-600" />
-              <div className="text-2xl font-bold text-blue-600">ScoreMAX</div>
+              <div className="text-2xl font-bold text-purple-600">ScoreMAX</div>
               <span className="ml-2 text-sm text-gray-500">Blueprint</span>
             </Link>
             <div className="hidden md:flex space-x-8">
-              <Link to="/maths" className="text-blue-600 font-medium">Maths</Link>
-              <Link to="/science" className="text-gray-700 hover:text-blue-600 transition-colors">Science</Link>
-              <Link to="/social" className="text-gray-700 hover:text-blue-600 transition-colors">Social</Link>
+              <Link to="/maths" className="text-purple-600 font-medium">Maths</Link>
+              <Link to="/science" className="text-gray-700 hover:text-teal-600 transition-colors">Science</Link>
+              <Link to="/social" className="text-gray-700 hover:text-orange-600 transition-colors">Social</Link>
               <Link to="/combo" className="text-gray-700 hover:text-blue-600 transition-colors">Combo</Link>
             </div>
           </div>
@@ -32,27 +32,27 @@ const Maths = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-blue-800 text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-purple-100 rounded-full text-purple-800 text-sm font-medium mb-6">
                 📊 Mathematics Blueprint
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Master <span className="text-blue-600">High-Scoring</span> Math Topics
+                Master <span className="text-purple-600">High-Scoring</span> Math Topics
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Strategic focus on formulas, theorems, and problem patterns that consistently appear in CBSE boards.
+                This guide is built for exam planning, not explanation. It flags important topics from CBSE's past 10-year trends.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-full">
+                <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Math Blueprint
                 </Button>
-                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full">
+                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-purple-300 text-purple-600 hover:bg-purple-50">
                   <Link to="/combo">View Combo Pack</Link>
                 </Button>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">What This Blueprint Is</h3>
-              <p className="text-blue-100 text-lg leading-relaxed">
+              <p className="text-purple-100 text-lg leading-relaxed">
                 "This is not a textbook. It's a scoring guide built from 10 years of CBSE trend data. 
                 Focus on what consistently scores, skip what rarely appears."
               </p>
@@ -67,63 +67,63 @@ const Maths = () => {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">How It Helps You</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <Target className="w-8 h-8 text-blue-600 mx-auto" />
+              <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <Target className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Focus on High-Yield Topics</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Spot High-Scoring Topics Instantly</h3>
               <p className="text-gray-600">Identify which theorems, formulas, and problem types appear most frequently in papers</p>
             </div>
             <div className="text-center">
               <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <Clock className="w-8 h-8 text-green-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">⏱️ Saves Time During Revision</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Focused on CBSE Past 10 Years</h3>
               <p className="text-gray-600">Skip low-probability topics and double down on what consistently scores marks</p>
             </div>
             <div className="text-center">
-              <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-purple-600 mx-auto" />
+              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-blue-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">✅ Built to Help You Prioritize</h3>
-              <p className="text-gray-600">Not memorize everything, but strategically focus on proven scoring patterns</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">⏱️ Saves Time During Final Revision</h3>
+              <p className="text-gray-600">Built to help you prioritize, not memorize everything</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who It's For */}
+      {/* Who Should Use It */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-6">
-            <Users className="w-8 h-8 text-blue-600 mx-auto" />
+          <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-6">
+            <Users className="w-8 h-8 text-purple-600 mx-auto" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Who It's For</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Who Should Use It</h2>
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <blockquote className="text-xl text-gray-700 italic leading-relaxed">
-              "Students who want to <strong className="text-blue-600">revise smart</strong> before the boards, 
-              not <strong className="text-gray-500">start from scratch.</strong> 
+              "Students who've <strong className="text-purple-600">studied once</strong> and want to 
+              <strong className="text-purple-600"> revise smartly.</strong> 
               Perfect for focused preparation in the final months."
             </blockquote>
           </div>
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Real Testimonials */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What Students Say</h2>
-          <Card className="bg-gradient-to-r from-blue-50 to-green-50 border-0 shadow-lg">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Real Testimonials</h2>
+          <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-0 shadow-lg">
             <CardContent className="p-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
                   A
                 </div>
                 <div>
                   <blockquote className="text-lg text-gray-700 mb-4 italic">
-                    "I used ScoreMAX to map out my last month. It helped me decide what not to ignore. 
-                    The formula priority list was exactly what I needed for quick revision."
+                    "I followed ScoreMAX for Mathematics and every formula pattern was exactly what appeared in my paper. 
+                    The priority list was exactly what I needed for quick revision."
                   </blockquote>
-                  <p className="text-blue-600 font-medium">— Anjali S., Class 10 Student</p>
+                  <p className="text-purple-600 font-medium">— Amit R., Class 10</p>
                 </div>
               </div>
             </CardContent>
@@ -138,20 +138,20 @@ const Maths = () => {
           <div className="space-y-6">
             <Card className="shadow-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Does this cover full chapters?</h3>
-                <p className="text-gray-600">➤ No. It highlights scoring topics within chapters, based on trends. You still need your textbook for learning concepts.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Does it explain chapters?</h3>
+                <p className="text-gray-600">➤ No. It points to scoring parts only. No chapter-wise teaching.</p>
               </CardContent>
             </Card>
             <Card className="shadow-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Is it a question bank or notes?</h3>
-                <p className="text-gray-600">➤ Neither. It's a visual trend guide to help you focus on what matters most for scoring.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Is it complete syllabus?</h3>
+                <p className="text-gray-600">➤ It helps prioritize. Coverage isn't the aim — scoring is.</p>
               </CardContent>
             </Card>
             <Card className="shadow-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Will it teach me topics?</h3>
-                <p className="text-gray-600">➤ No. It points you to high-priority topics — not explain them. Use it alongside your textbooks and classes.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I use it best?</h3>
+                <p className="text-gray-600">➤ Use this as a checklist to verify your prep is aligned with what's most often asked.</p>
               </CardContent>
             </Card>
           </div>
@@ -159,15 +159,15 @@ const Maths = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-purple-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Focus Your Math Preparation?</h2>
-          <p className="text-blue-100 text-lg mb-8">Get strategic with your revision. Know what to prioritize.</p>
+          <p className="text-purple-100 text-lg mb-8">Get strategic with your revision. Know what to prioritize.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full">
+            <Button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full">
               Get Math Blueprint Now
             </Button>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg rounded-full">
+            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 text-lg rounded-full">
               <Link to="/combo">Save with Combo Pack</Link>
             </Button>
           </div>
