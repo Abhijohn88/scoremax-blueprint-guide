@@ -1,13 +1,27 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, Play } from 'lucide-react';
 
 const Maths = () => {
+  const scrollToBuySection = () => {
+    const buySection = document.getElementById('buy-section');
+    if (buySection) {
+      buySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">
+      {/* Sticky Buy Now Button */}
+      <button 
+        onClick={scrollToBuySection}
+        className="fixed bottom-5 right-5 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 animate-pulse"
+      >
+        Buy Now – ScoreMAX
+      </button>
+
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,9 +33,9 @@ const Maths = () => {
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link to="/maths" className="text-purple-600 font-medium">Maths</Link>
-              <Link to="/science" className="text-gray-700 hover:text-teal-600 transition-colors">Science</Link>
-              <Link to="/social" className="text-gray-700 hover:text-orange-600 transition-colors">Social</Link>
-              <Link to="/combo" className="text-gray-700 hover:text-blue-600 transition-colors">Combo</Link>
+              <Link to="/science" className="text-gray-700 hover:text-purple-600 transition-colors">Science</Link>
+              <Link to="/social" className="text-gray-700 hover:text-purple-600 transition-colors">Social</Link>
+              <Link to="/combo" className="text-gray-700 hover:text-purple-600 transition-colors">Combo</Link>
             </div>
           </div>
         </div>
@@ -74,15 +88,15 @@ const Maths = () => {
               <p className="text-gray-600">Identify which theorems, formulas, and problem types appear most frequently in papers</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <Clock className="w-8 h-8 text-green-600 mx-auto" />
+              <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <Clock className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Focused on CBSE Past 10 Years</h3>
               <p className="text-gray-600">Skip low-probability topics and double down on what consistently scores marks</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-blue-600 mx-auto" />
+              <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">⏱️ Saves Time During Final Revision</h3>
               <p className="text-gray-600">Built to help you prioritize, not memorize everything</p>
@@ -91,8 +105,57 @@ const Maths = () => {
         </div>
       </section>
 
-      {/* Who Should Use It */}
+      {/* Product Showcase Images */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Product Showcase</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📊</div>
+                  <p className="text-purple-600 font-semibold">Formula Priority Charts</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📈</div>
+                  <p className="text-purple-600 font-semibold">Topic Frequency Analysis</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🎯</div>
+                  <p className="text-purple-600 font-semibold">Strategic Study Plan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Subject Video Embed */}
+          <div className="max-w-4xl mx-auto">
+            <Card className="overflow-hidden shadow-xl">
+              <CardContent className="p-0">
+                <div className="aspect-video bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center relative">
+                  <div className="text-center text-white">
+                    <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
+                    <h3 className="text-2xl font-bold mb-2">Math Blueprint Walkthrough</h3>
+                    <p className="text-purple-100">See how to use this blueprint for maximum scoring</p>
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Who Should Use It */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-6">
             <Users className="w-8 h-8 text-purple-600 mx-auto" />
@@ -109,7 +172,7 @@ const Maths = () => {
       </section>
 
       {/* Real Testimonials */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Real Testimonials</h2>
           <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-0 shadow-lg">
@@ -132,7 +195,7 @@ const Maths = () => {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
           <div className="space-y-6">
@@ -159,7 +222,7 @@ const Maths = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-purple-700">
+      <section id="buy-section" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-purple-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Focus Your Math Preparation?</h2>
           <p className="text-purple-100 text-lg mb-8">Get strategic with your revision. Know what to prioritize.</p>
@@ -179,13 +242,13 @@ const Maths = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-blue-400 mb-4">ScoreMAX</div>
+              <div className="text-2xl font-bold text-purple-400 mb-4">ScoreMAX</div>
               <p className="text-gray-400">Strategic exam planning for CBSE Class 10 students</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
               <div className="space-y-2">
-                <Link to="/maths" className="block text-blue-400 font-medium">Maths Blueprint</Link>
+                <Link to="/maths" className="block text-purple-400 font-medium">Maths Blueprint</Link>
                 <Link to="/science" className="block text-gray-400 hover:text-white transition-colors">Science Blueprint</Link>
                 <Link to="/social" className="block text-gray-400 hover:text-white transition-colors">Social Blueprint</Link>
                 <Link to="/combo" className="block text-gray-400 hover:text-white transition-colors">Combo Pack</Link>
@@ -195,8 +258,9 @@ const Maths = () => {
               <h4 className="font-semibold mb-4">Legal</h4>
               <div className="space-y-2">
                 <Link to="/privacy-policy" className="block text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-                <Link to="/terms" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+                <Link to="/terms-of-service" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
                 <Link to="/refund-policy" className="block text-gray-400 hover:text-white transition-colors">Refund Policy</Link>
+                <Link to="/disclaimer" className="block text-gray-400 hover:text-white transition-colors">Disclaimer</Link>
               </div>
             </div>
             <div>

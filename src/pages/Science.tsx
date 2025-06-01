@@ -1,27 +1,41 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, Play } from 'lucide-react';
 
 const Science = () => {
+  const scrollToBuySection = () => {
+    const buySection = document.getElementById('buy-section');
+    if (buySection) {
+      buySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-white to-teal-100">
+      {/* Sticky Buy Now Button */}
+      <button 
+        onClick={scrollToBuySection}
+        className="fixed bottom-5 right-5 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 animate-pulse"
+      >
+        Buy Now – ScoreMAX
+      </button>
+
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center">
               <ArrowLeft className="w-5 h-5 mr-2 text-gray-600" />
-              <div className="text-2xl font-bold text-green-600">ScoreMAX</div>
+              <div className="text-2xl font-bold text-teal-600">ScoreMAX</div>
               <span className="ml-2 text-sm text-gray-500">Blueprint</span>
             </Link>
             <div className="hidden md:flex space-x-8">
-              <Link to="/maths" className="text-gray-700 hover:text-green-600 transition-colors">Maths</Link>
-              <Link to="/science" className="text-green-600 font-medium">Science</Link>
-              <Link to="/social" className="text-gray-700 hover:text-green-600 transition-colors">Social</Link>
-              <Link to="/combo" className="text-gray-700 hover:text-green-600 transition-colors">Combo</Link>
+              <Link to="/maths" className="text-gray-700 hover:text-teal-600 transition-colors">Maths</Link>
+              <Link to="/science" className="text-teal-600 font-medium">Science</Link>
+              <Link to="/social" className="text-gray-700 hover:text-teal-600 transition-colors">Social</Link>
+              <Link to="/combo" className="text-gray-700 hover:text-teal-600 transition-colors">Combo</Link>
             </div>
           </div>
         </div>
@@ -32,27 +46,27 @@ const Science = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full text-green-800 text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-teal-100 rounded-full text-teal-800 text-sm font-medium mb-6">
                 🔬 Science Blueprint
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Excel in <span className="text-green-600">Physics, Chemistry & Biology</span>
+                Excel in <span className="text-teal-600">Physics, Chemistry & Biology</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Strategic coverage of diagrams, reactions, and concepts that consistently appear in CBSE boards.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg rounded-full">
+                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Science Blueprint
                 </Button>
-                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full">
+                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-teal-300 text-teal-600 hover:bg-teal-50">
                   <Link to="/combo">View Combo Pack</Link>
                 </Button>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">What This Blueprint Is</h3>
-              <p className="text-green-100 text-lg leading-relaxed">
+              <p className="text-teal-100 text-lg leading-relaxed">
                 "This is not a textbook. It's a scoring guide built from 10 years of CBSE trend data. 
                 Focus on diagrams, reactions, and concepts that consistently score marks."
               </p>
@@ -67,26 +81,75 @@ const Science = () => {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">How It Helps You</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <Target className="w-8 h-8 text-green-600 mx-auto" />
+              <div className="bg-teal-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <Target className="w-8 h-8 text-teal-600 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Focus on High-Yield Topics</h3>
               <p className="text-gray-600">Identify which diagrams, reactions, and processes appear most frequently in papers</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <Clock className="w-8 h-8 text-blue-600 mx-auto" />
+              <div className="bg-teal-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <Clock className="w-8 h-8 text-teal-600 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">⏱️ Saves Time During Revision</h3>
               <p className="text-gray-600">Skip low-probability topics and master what consistently appears in exams</p>
             </div>
             <div className="text-center">
-              <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-purple-600 mx-auto" />
+              <div className="bg-teal-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-teal-600 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">✅ Built to Help You Prioritize</h3>
               <p className="text-gray-600">Not memorize everything, but strategically focus on proven scoring concepts</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Showcase Images */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Product Showcase</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🔬</div>
+                  <p className="text-teal-600 font-semibold">Diagram Priorities</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🧪</div>
+                  <p className="text-teal-600 font-semibold">Reaction Patterns</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🌿</div>
+                  <p className="text-teal-600 font-semibold">Process Maps</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Subject Video Embed */}
+          <div className="max-w-4xl mx-auto">
+            <Card className="overflow-hidden shadow-xl border-2 border-teal-100">
+              <CardContent className="p-0">
+                <div className="aspect-video bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center relative">
+                  <div className="text-center text-white">
+                    <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
+                    <h3 className="text-2xl font-bold mb-2">Science Blueprint Walkthrough</h3>
+                    <p className="text-teal-100">Master diagrams and reactions that score consistently</p>
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -167,7 +230,7 @@ const Science = () => {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
           <div className="space-y-6">
@@ -194,15 +257,15 @@ const Science = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-700">
+      <section id="buy-section" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 to-teal-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Master Science Strategically?</h2>
-          <p className="text-green-100 text-lg mb-8">Focus on what scores. Skip what doesn't.</p>
+          <p className="text-teal-100 text-lg mb-8">Focus on what scores. Skip what doesn't.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full">
+            <Button className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full">
               Get Science Blueprint Now
             </Button>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 text-lg rounded-full">
+            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-teal-600 px-8 py-3 text-lg rounded-full">
               <Link to="/combo">Save with Combo Pack</Link>
             </Button>
           </div>
@@ -214,14 +277,14 @@ const Science = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-green-400 mb-4">ScoreMAX</div>
+              <div className="text-2xl font-bold text-teal-400 mb-4">ScoreMAX</div>
               <p className="text-gray-400">Strategic exam planning for CBSE Class 10 students</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
               <div className="space-y-2">
                 <Link to="/maths" className="block text-gray-400 hover:text-white transition-colors">Maths Blueprint</Link>
-                <Link to="/science" className="block text-green-400 font-medium">Science Blueprint</Link>
+                <Link to="/science" className="block text-teal-400 font-medium">Science Blueprint</Link>
                 <Link to="/social" className="block text-gray-400 hover:text-white transition-colors">Social Blueprint</Link>
                 <Link to="/combo" className="block text-gray-400 hover:text-white transition-colors">Combo Pack</Link>
               </div>
@@ -230,8 +293,9 @@ const Science = () => {
               <h4 className="font-semibold mb-4">Legal</h4>
               <div className="space-y-2">
                 <Link to="/privacy-policy" className="block text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-                <Link to="/terms" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+                <Link to="/terms-of-service" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
                 <Link to="/refund-policy" className="block text-gray-400 hover:text-white transition-colors">Refund Policy</Link>
+                <Link to="/disclaimer" className="block text-gray-400 hover:text-white transition-colors">Disclaimer</Link>
               </div>
             </div>
             <div>

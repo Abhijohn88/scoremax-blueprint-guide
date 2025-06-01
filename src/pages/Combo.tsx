@@ -1,24 +1,26 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter } from 'lucide-react';
+import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play } from 'lucide-react';
 
 const Combo = () => {
+  const scrollToCheckout = () => {
+    const checkoutSection = document.getElementById('checkout-section');
+    if (checkoutSection) {
+      checkoutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-yellow-50">
-      {/* Sticky Buy Now Button */}
-      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-        <Button className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 animate-pulse">
-          <span className="relative flex items-center">
-            💡 Download Combo Blueprint
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-bounce">
-              Best Value
-            </span>
-          </span>
-        </Button>
-      </div>
+      {/* Enhanced Sticky Buy Now Button */}
+      <button 
+        onClick={scrollToCheckout}
+        className="fixed bottom-5 right-5 bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 animate-bounce"
+      >
+        💡 Buy Combo – ScoreMAX
+      </button>
 
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
@@ -122,6 +124,103 @@ const Combo = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">30-Day CBSE Final Prep Calendar</h3>
                 <p className="text-gray-600">Day-by-day strategic schedule for optimal board exam preparation</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* 3x3 Product Images Grid */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Complete Product Preview</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
+              <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">📊</div>
+                  <p className="text-purple-600 font-semibold text-sm">Math Formulas</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
+              <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">📈</div>
+                  <p className="text-purple-600 font-semibold text-sm">Trend Analysis</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
+              <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">🎯</div>
+                  <p className="text-purple-600 font-semibold text-sm">Priority Lists</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">🔬</div>
+                  <p className="text-teal-600 font-semibold text-sm">Science Diagrams</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">🧪</div>
+                  <p className="text-teal-600 font-semibold text-sm">Reactions</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">🌿</div>
+                  <p className="text-teal-600 font-semibold text-sm">Biology Maps</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
+              <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">🗺️</div>
+                  <p className="text-orange-600 font-semibold text-sm">Geography Maps</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
+              <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">📅</div>
+                  <p className="text-orange-600 font-semibold text-sm">History Dates</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
+              <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">⚖️</div>
+                  <p className="text-orange-600 font-semibold text-sm">Civics Concepts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Combo Video Embed */}
+          <div className="max-w-4xl mx-auto">
+            <Card className="overflow-hidden shadow-xl">
+              <CardContent className="p-0">
+                <div className="aspect-video bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 flex items-center justify-center relative">
+                  <div className="text-center text-white">
+                    <Play className="w-20 h-20 mx-auto mb-4 opacity-80" />
+                    <h3 className="text-3xl font-bold mb-3">Complete Combo Walkthrough</h3>
+                    <p className="text-orange-100 text-lg">See how all three blueprints work together for maximum scoring</p>
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -246,7 +345,7 @@ const Combo = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-600">
+      <section id="checkout-section" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Master All Three Subjects Strategically?</h2>
           <p className="text-orange-100 text-xl mb-8">Join thousands of students who've optimized their board preparation</p>
@@ -283,8 +382,9 @@ const Combo = () => {
               <h4 className="font-semibold mb-4">Legal</h4>
               <div className="space-y-2">
                 <Link to="/privacy-policy" className="block text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-                <Link to="/terms" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+                <Link to="/terms-of-service" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
                 <Link to="/refund-policy" className="block text-gray-400 hover:text-white transition-colors">Refund Policy</Link>
+                <Link to="/disclaimer" className="block text-gray-400 hover:text-white transition-colors">Disclaimer</Link>
               </div>
             </div>
             <div>
