@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play } from 'lucide-react';
+import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play, ExternalLink } from 'lucide-react';
 
 const Combo = () => {
   const scrollToCheckout = () => {
@@ -12,14 +13,18 @@ const Combo = () => {
     }
   };
 
+  const handleBuyNow = () => {
+    window.open('https://abhi-tzp.myinstamojo.com/checkout/v2/customer-info', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-yellow-50">
       {/* Enhanced Sticky Buy Now Button */}
       <button 
-        onClick={scrollToCheckout}
-        className="fixed bottom-5 right-5 bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 animate-bounce"
+        onClick={handleBuyNow}
+        className="fixed bottom-5 right-5 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 font-bold"
       >
-        💡 Buy Combo – ScoreMAX
+        Buy Now – ₹299
       </button>
 
       {/* Navigation */}
@@ -55,8 +60,12 @@ const Combo = () => {
               Maths, Science, and Social Science – Strategically Planned for CBSE Boards
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                Get Combo Blueprint Now
+              <Button 
+                onClick={handleBuyNow}
+                className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                Buy Now – ₹299
               </Button>
               <div className="flex items-center text-sm text-gray-600">
                 <Star className="w-4 h-4 text-yellow-500 mr-1" />
@@ -64,6 +73,21 @@ const Combo = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Buy Now Section Below Hero */}
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-teal-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Get All 3 Blueprints for Just ₹299</h2>
+          <p className="text-gray-600 mb-6">Complete strategic coverage for CBSE Class 10 boards</p>
+          <Button 
+            onClick={handleBuyNow}
+            className="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
+          >
+            <ExternalLink className="w-6 h-6 mr-2" />
+            Buy Now – ₹299
+          </Button>
         </div>
       </section>
 
@@ -350,8 +374,12 @@ const Combo = () => {
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Master All Three Subjects Strategically?</h2>
           <p className="text-orange-100 text-xl mb-8">Join thousands of students who've optimized their board preparation</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Get Combo Blueprint Now
+            <Button 
+              onClick={handleBuyNow}
+              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
+            >
+              <ExternalLink className="w-6 h-6 mr-2" />
+              Buy Now – ₹299
             </Button>
           </div>
           <div className="flex items-center justify-center text-orange-100">

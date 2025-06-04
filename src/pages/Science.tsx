@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users, Play } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, Play, ExternalLink } from 'lucide-react';
 
 const Science = () => {
   const scrollToBuySection = () => {
@@ -12,14 +13,18 @@ const Science = () => {
     }
   };
 
+  const handleBuyNow = () => {
+    window.open('https://abhi-tzp.myinstamojo.com/checkout/v2/customer-info', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 via-white to-teal-100">
       {/* Sticky Buy Now Button */}
       <button 
-        onClick={scrollToBuySection}
-        className="fixed bottom-5 right-5 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 animate-pulse"
+        onClick={handleBuyNow}
+        className="fixed bottom-5 right-5 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 font-bold"
       >
-        Buy Now – ScoreMAX
+        Buy Now – ₹299
       </button>
 
       {/* Navigation */}
@@ -262,8 +267,12 @@ const Science = () => {
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Master Science Strategically?</h2>
           <p className="text-teal-100 text-lg mb-8">Focus on what scores. Skip what doesn't.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full">
-              Get Science Blueprint Now
+            <Button 
+              onClick={handleBuyNow}
+              className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full font-bold"
+            >
+              <ExternalLink className="w-5 h-5 mr-2" />
+              Buy Now – ₹299
             </Button>
             <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-teal-600 px-8 py-3 text-lg rounded-full">
               <Link to="/combo">Save with Combo Pack</Link>
