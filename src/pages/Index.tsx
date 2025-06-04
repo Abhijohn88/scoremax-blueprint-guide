@@ -67,6 +67,10 @@ const Index = () => {
                   <span className="text-white text-2xl font-bold">📊</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
+                <div className="mb-4">
+                  <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+                  <div className="text-lg font-bold text-purple-600">₹199</div>
+                </div>
                 <p className="text-gray-600 mb-4">Strategic focus on high-scoring topics and formula patterns</p>
                 <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
                   <Link to="/maths">Explore Maths</Link>
@@ -81,6 +85,10 @@ const Index = () => {
                   <span className="text-white text-2xl font-bold">🔬</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
+                <div className="mb-4">
+                  <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+                  <div className="text-lg font-bold text-teal-600">₹199</div>
+                </div>
                 <p className="text-gray-600 mb-4">Physics, Chemistry, Biology - All covered strategically</p>
                 <Button asChild variant="outline" className="w-full group-hover:bg-teal-50 group-hover:border-teal-300">
                   <Link to="/science">Explore Science</Link>
@@ -95,6 +103,10 @@ const Index = () => {
                   <span className="text-white text-2xl font-bold">🗺️</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
+                <div className="mb-4">
+                  <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+                  <div className="text-lg font-bold text-orange-600">₹199</div>
+                </div>
                 <p className="text-gray-600 mb-4">History, Geography, Civics, Economics made strategic</p>
                 <Button asChild variant="outline" className="w-full group-hover:bg-orange-50 group-hover:border-orange-300">
                   <Link to="/social">Explore Social</Link>
@@ -112,6 +124,10 @@ const Index = () => {
                   <span className="text-white text-2xl font-bold">🌟</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
+                <div className="mb-4">
+                  <div className="text-sm text-gray-500 line-through">MRP: ₹599</div>
+                  <div className="text-lg font-bold text-blue-600">₹299</div>
+                </div>
                 <p className="text-gray-600 mb-4">All 3 subjects + bonus planning tools</p>
                 <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
                   <Link to="/combo">Get Combo Blueprint</Link>
@@ -183,7 +199,11 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold text-blue-400 mb-4">ScoreMAX</div>
-              <p className="text-gray-400">Strategic exam planning for CBSE Class 10 students</p>
+              <p className="text-gray-400 mb-4">Strategic exam planning for CBSE Class 10 students</p>
+              <div className="text-sm text-gray-400">
+                <p>Email: scoremax.blueprint@gmail.com</p>
+                <p>Grievance Officer: Abhinand</p>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
@@ -198,26 +218,27 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Legal</h4>
               <div className="space-y-2">
                 <Link to="/privacy-policy" className="block text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-                <Link to="/terms" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+                <Link to="/terms-of-service" className="block text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
                 <Link to="/refund-policy" className="block text-gray-400 hover:text-white transition-colors">Refund Policy</Link>
+                <Link to="/disclaimer" className="block text-gray-400 hover:text-white transition-colors">Disclaimer</Link>
               </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="sr-only">Facebook</span>
-                  📘
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="sr-only">Instagram</span>
-                  📷
-                </a>
+              <div className="flex space-x-4 mb-4">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">📘</a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">📷</a>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="text-center text-gray-400 text-sm">
+              <p className="mb-2">&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+              <p className="text-xs">ScoreMAX is a digital scoring guide, not a textbook. All purchases are final.</p>
+              <p className="text-xs">For support, contact scoremax.blueprint@gmail.com.</p>
+              <p className="text-xs">Products are delivered instantly via download + email confirmation after payment.</p>
+              <p className="text-xs">Compliant with Indian consumer law and RBI e-commerce guidelines.</p>
+            </div>
           </div>
         </div>
       </footer>

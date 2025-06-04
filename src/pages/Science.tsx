@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -110,16 +109,16 @@ const Science = () => {
         </div>
       </section>
 
-      {/* Product Showcase Images */}
+      {/* What's Inside - Product Showcase Images */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Product Showcase</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🔬</div>
-                  <p className="text-teal-600 font-semibold">Diagram Priorities</p>
+                  <p className="text-teal-600 font-semibold">science1.png</p>
                 </div>
               </div>
             </div>
@@ -127,7 +126,7 @@ const Science = () => {
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🧪</div>
-                  <p className="text-teal-600 font-semibold">Reaction Patterns</p>
+                  <p className="text-teal-600 font-semibold">science2.png</p>
                 </div>
               </div>
             </div>
@@ -135,7 +134,15 @@ const Science = () => {
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🌿</div>
-                  <p className="text-teal-600 font-semibold">Process Maps</p>
+                  <p className="text-teal-600 font-semibold">science3.png</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">⚛️</div>
+                  <p className="text-teal-600 font-semibold">science4.png</p>
                 </div>
               </div>
             </div>
@@ -148,7 +155,7 @@ const Science = () => {
                 <div className="aspect-video bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center relative">
                   <div className="text-center text-white">
                     <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                    <h3 className="text-2xl font-bold mb-2">Science Blueprint Walkthrough</h3>
+                    <h3 className="text-2xl font-bold mb-2">science_video.mp4</h3>
                     <p className="text-teal-100">Master diagrams and reactions that score consistently</p>
                   </div>
                   <div className="absolute inset-0 bg-black bg-opacity-20"></div>
@@ -265,14 +272,31 @@ const Science = () => {
       <section id="buy-section" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 to-teal-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Master Science Strategically?</h2>
-          <p className="text-teal-100 text-lg mb-8">Focus on what scores. Skip what doesn't.</p>
+          
+          {/* Pricing Display */}
+          <div className="bg-white rounded-lg p-6 mb-6 inline-block">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Class 10 Science Blueprint</h3>
+              <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+              <div className="text-2xl font-bold text-teal-600 mb-2">₹199</div>
+            </div>
+          </div>
+          
+          <p className="text-teal-100 text-lg mb-6">Focus on what scores. Skip what doesn't.</p>
+          
+          {/* Delivery Info */}
+          <div className="bg-teal-800 bg-opacity-50 rounded-lg p-4 mb-8 text-teal-100">
+            <p className="text-sm">✅ Instant delivery via email + download link after payment.</p>
+            <p className="text-sm">🔁 No refunds on digital products. Please read before purchasing.</p>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={handleBuyNow}
               className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full font-bold"
             >
               <ExternalLink className="w-5 h-5 mr-2" />
-              Buy Now – ₹299
+              Buy Now – ₹199
             </Button>
             <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-teal-600 px-8 py-3 text-lg rounded-full">
               <Link to="/combo">Save with Combo Pack</Link>
@@ -287,7 +311,11 @@ const Science = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold text-teal-400 mb-4">ScoreMAX</div>
-              <p className="text-gray-400">Strategic exam planning for CBSE Class 10 students</p>
+              <p className="text-gray-400 mb-4">Strategic exam planning for CBSE Class 10 students</p>
+              <div className="text-sm text-gray-400">
+                <p>Email: scoremax.blueprint@gmail.com</p>
+                <p>Grievance Officer: Abhinand</p>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
@@ -309,14 +337,20 @@ const Science = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mb-4">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">📘</a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">📷</a>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="text-center text-gray-400 text-sm">
+              <p className="mb-2">&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+              <p className="text-xs">ScoreMAX is a digital scoring guide, not a textbook. All purchases are final.</p>
+              <p className="text-xs">For support, contact scoremax.blueprint@gmail.com.</p>
+              <p className="text-xs">Products are delivered instantly via download + email confirmation after payment.</p>
+              <p className="text-xs">Compliant with Indian consumer law and RBI e-commerce guidelines.</p>
+            </div>
           </div>
         </div>
       </footer>

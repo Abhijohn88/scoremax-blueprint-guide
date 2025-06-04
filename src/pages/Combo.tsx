@@ -19,14 +19,6 @@ const Combo = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-yellow-50">
-      {/* Enhanced Sticky Buy Now Button */}
-      <button 
-        onClick={handleBuyNow}
-        className="fixed bottom-5 right-5 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 font-bold"
-      >
-        Buy Now – ₹299
-      </button>
-
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,6 +51,25 @@ const Combo = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Maths, Science, and Social Science – Strategically Planned for CBSE Boards
             </p>
+            
+            {/* Pricing Display */}
+            <div className="bg-white rounded-lg p-6 mb-6 inline-block shadow-lg">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack (All 3 Subjects)</h3>
+                <div className="text-sm text-gray-500 line-through">MRP: ₹599</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">₹299</div>
+                <div className="inline-flex items-center px-3 py-1 bg-blue-100 rounded-full text-blue-800 text-sm font-medium animate-pulse">
+                  💡 BEST VALUE
+                </div>
+              </div>
+            </div>
+            
+            {/* Delivery Info */}
+            <div className="bg-blue-50 rounded-lg p-4 mb-8 text-blue-900 max-w-lg mx-auto">
+              <p className="text-sm">✅ Instant delivery via email + download link after payment.</p>
+              <p className="text-sm">🔁 No refunds on digital products. Please read before purchasing.</p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
                 onClick={handleBuyNow}
@@ -69,25 +80,10 @@ const Combo = () => {
               </Button>
               <div className="flex items-center text-sm text-gray-600">
                 <Star className="w-4 h-4 text-yellow-500 mr-1" />
-                <span>Save 40% vs individual purchases</span>
+                <span>Save 50% vs individual purchases</span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Buy Now Section Below Hero */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-teal-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Get All 3 Blueprints for Just ₹299</h2>
-          <p className="text-gray-600 mb-6">Complete strategic coverage for CBSE Class 10 boards</p>
-          <Button 
-            onClick={handleBuyNow}
-            className="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
-          >
-            <ExternalLink className="w-6 h-6 mr-2" />
-            Buy Now – ₹299
-          </Button>
         </div>
       </section>
 
@@ -157,13 +153,13 @@ const Combo = () => {
       {/* 3x3 Product Images Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Complete Product Preview</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
               <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">📊</div>
-                  <p className="text-purple-600 font-semibold text-sm">Math Formulas</p>
+                  <p className="text-purple-600 font-semibold text-sm">combo1.png</p>
                 </div>
               </div>
             </div>
@@ -171,7 +167,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">📈</div>
-                  <p className="text-purple-600 font-semibold text-sm">Trend Analysis</p>
+                  <p className="text-purple-600 font-semibold text-sm">combo2.png</p>
                 </div>
               </div>
             </div>
@@ -179,7 +175,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">🎯</div>
-                  <p className="text-purple-600 font-semibold text-sm">Priority Lists</p>
+                  <p className="text-purple-600 font-semibold text-sm">combo3.png</p>
                 </div>
               </div>
             </div>
@@ -187,7 +183,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">🔬</div>
-                  <p className="text-teal-600 font-semibold text-sm">Science Diagrams</p>
+                  <p className="text-teal-600 font-semibold text-sm">combo4.png</p>
                 </div>
               </div>
             </div>
@@ -195,7 +191,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">🧪</div>
-                  <p className="text-teal-600 font-semibold text-sm">Reactions</p>
+                  <p className="text-teal-600 font-semibold text-sm">combo5.png</p>
                 </div>
               </div>
             </div>
@@ -203,7 +199,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">🌿</div>
-                  <p className="text-teal-600 font-semibold text-sm">Biology Maps</p>
+                  <p className="text-teal-600 font-semibold text-sm">combo6.png</p>
                 </div>
               </div>
             </div>
@@ -211,7 +207,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">🗺️</div>
-                  <p className="text-orange-600 font-semibold text-sm">Geography Maps</p>
+                  <p className="text-orange-600 font-semibold text-sm">combo7.png</p>
                 </div>
               </div>
             </div>
@@ -219,7 +215,7 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">📅</div>
-                  <p className="text-orange-600 font-semibold text-sm">History Dates</p>
+                  <p className="text-orange-600 font-semibold text-sm">combo8.png</p>
                 </div>
               </div>
             </div>
@@ -227,26 +223,54 @@ const Combo = () => {
               <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-3xl mb-2">⚖️</div>
-                  <p className="text-orange-600 font-semibold text-sm">Civics Concepts</p>
+                  <p className="text-orange-600 font-semibold text-sm">combo9.png</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Combo Video Embed */}
-          <div className="max-w-4xl mx-auto">
-            <Card className="overflow-hidden shadow-xl">
-              <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 flex items-center justify-center relative">
-                  <div className="text-center text-white">
-                    <Play className="w-20 h-20 mx-auto mb-4 opacity-80" />
-                    <h3 className="text-3xl font-bold mb-3">Complete Combo Walkthrough</h3>
-                    <p className="text-orange-100 text-lg">See how all three blueprints work together for maximum scoring</p>
+          {/* Combo Video Embeds */}
+          <div className="space-y-8">
+            <div className="max-w-4xl mx-auto">
+              <Card className="overflow-hidden shadow-xl">
+                <CardContent className="p-0">
+                  <div className="aspect-video bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 flex items-center justify-center relative">
+                    <div className="text-center text-white">
+                      <Play className="w-20 h-20 mx-auto mb-4 opacity-80" />
+                      <h3 className="text-3xl font-bold mb-3">combo_video1.mp4</h3>
+                      <p className="text-orange-100 text-lg">Complete Combo Walkthrough</p>
+                    </div>
+                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                   </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="overflow-hidden shadow-xl">
+                <CardContent className="p-0">
+                  <div className="aspect-video bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center relative">
+                    <div className="text-center text-white">
+                      <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
+                      <h3 className="text-xl font-bold mb-2">combo_video2.mp4</h3>
+                      <p className="text-blue-100">Study Strategy Guide</p>
+                    </div>
+                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden shadow-xl">
+                <CardContent className="p-0">
+                  <div className="aspect-video bg-gradient-to-r from-teal-500 to-green-500 flex items-center justify-center relative">
+                    <div className="text-center text-white">
+                      <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
+                      <h3 className="text-xl font-bold mb-2">combo_video3.mp4</h3>
+                      <p className="text-teal-100">Quick Tips</p>
+                    </div>
+                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -395,7 +419,11 @@ const Combo = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold text-orange-400 mb-4">ScoreMAX</div>
-              <p className="text-gray-400">Strategic exam planning for CBSE Class 10 students</p>
+              <p className="text-gray-400 mb-4">Strategic exam planning for CBSE Class 10 students</p>
+              <div className="text-sm text-gray-400">
+                <p>Email: scoremax.blueprint@gmail.com</p>
+                <p>Grievance Officer: Abhinand</p>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
@@ -417,14 +445,20 @@ const Combo = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mb-4">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">📘</a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">📷</a>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="text-center text-gray-400 text-sm">
+              <p className="mb-2">&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+              <p className="text-xs">ScoreMAX is a digital scoring guide, not a textbook. All purchases are final.</p>
+              <p className="text-xs">For support, contact scoremax.blueprint@gmail.com.</p>
+              <p className="text-xs">Products are delivered instantly via download + email confirmation after payment.</p>
+              <p className="text-xs">Compliant with Indian consumer law and RBI e-commerce guidelines.</p>
+            </div>
           </div>
         </div>
       </footer>

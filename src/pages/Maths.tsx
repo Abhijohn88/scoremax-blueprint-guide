@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -19,14 +18,6 @@ const Maths = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">
-      {/* Sticky Buy Now Button */}
-      <button 
-        onClick={handleBuyNow}
-        className="fixed bottom-5 right-5 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 z-50 font-bold"
-      >
-        Buy Now – ₹299
-      </button>
-
       {/* Navigation */}
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,16 +101,16 @@ const Maths = () => {
         </div>
       </section>
 
-      {/* Product Showcase Images */}
+      {/* What's Inside - Product Showcase Images */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Product Showcase</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">📊</div>
-                  <p className="text-purple-600 font-semibold">Formula Priority Charts</p>
+                  <p className="text-purple-600 font-semibold">maths1.png</p>
                 </div>
               </div>
             </div>
@@ -127,7 +118,7 @@ const Maths = () => {
               <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">📈</div>
-                  <p className="text-purple-600 font-semibold">Topic Frequency Analysis</p>
+                  <p className="text-purple-600 font-semibold">maths2.png</p>
                 </div>
               </div>
             </div>
@@ -135,7 +126,15 @@ const Maths = () => {
               <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🎯</div>
-                  <p className="text-purple-600 font-semibold">Strategic Study Plan</p>
+                  <p className="text-purple-600 font-semibold">maths3.png</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📝</div>
+                  <p className="text-purple-600 font-semibold">maths4.png</p>
                 </div>
               </div>
             </div>
@@ -148,7 +147,7 @@ const Maths = () => {
                 <div className="aspect-video bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center relative">
                   <div className="text-center text-white">
                     <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                    <h3 className="text-2xl font-bold mb-2">Math Blueprint Walkthrough</h3>
+                    <h3 className="text-2xl font-bold mb-2">maths_video.mp4</h3>
                     <p className="text-purple-100">See how to use this blueprint for maximum scoring</p>
                   </div>
                   <div className="absolute inset-0 bg-black bg-opacity-20"></div>
@@ -230,14 +229,31 @@ const Maths = () => {
       <section id="buy-section" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-purple-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Focus Your Math Preparation?</h2>
-          <p className="text-purple-100 text-lg mb-8">Get strategic with your revision. Know what to prioritize.</p>
+          
+          {/* Pricing Display */}
+          <div className="bg-white rounded-lg p-6 mb-6 inline-block">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Class 10 Maths Blueprint</h3>
+              <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+              <div className="text-2xl font-bold text-purple-600 mb-2">₹199</div>
+            </div>
+          </div>
+          
+          <p className="text-purple-100 text-lg mb-6">Get strategic with your revision. Know what to prioritize.</p>
+          
+          {/* Delivery Info */}
+          <div className="bg-purple-800 bg-opacity-50 rounded-lg p-4 mb-8 text-purple-100">
+            <p className="text-sm">✅ Instant delivery via email + download link after payment.</p>
+            <p className="text-sm">🔁 No refunds on digital products. Please read before purchasing.</p>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={handleBuyNow}
               className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 text-lg rounded-full font-bold"
             >
               <ExternalLink className="w-5 h-5 mr-2" />
-              Buy Now – ₹299
+              Buy Now – ₹199
             </Button>
             <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 text-lg rounded-full">
               <Link to="/combo">Save with Combo Pack</Link>
@@ -252,7 +268,11 @@ const Maths = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold text-purple-400 mb-4">ScoreMAX</div>
-              <p className="text-gray-400">Strategic exam planning for CBSE Class 10 students</p>
+              <p className="text-gray-400 mb-4">Strategic exam planning for CBSE Class 10 students</p>
+              <div className="text-sm text-gray-400">
+                <p>Email: scoremax.blueprint@gmail.com</p>
+                <p>Grievance Officer: Abhinand</p>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
@@ -274,14 +294,20 @@ const Maths = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mb-4">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">📘</a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">📷</a>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="text-center text-gray-400 text-sm">
+              <p className="mb-2">&copy; 2024 ScoreMAX Blueprint. All rights reserved.</p>
+              <p className="text-xs">ScoreMAX is a digital scoring guide, not a textbook. All purchases are final.</p>
+              <p className="text-xs">For support, contact scoremax.blueprint@gmail.com.</p>
+              <p className="text-xs">Products are delivered instantly via download + email confirmation after payment.</p>
+              <p className="text-xs">Compliant with Indian consumer law and RBI e-commerce guidelines.</p>
+            </div>
           </div>
         </div>
       </footer>
