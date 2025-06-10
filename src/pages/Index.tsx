@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
@@ -64,7 +62,7 @@ const Index = () => {
             {/* Maths Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-64 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
                   <img 
                     src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=176&h=176&fit=crop&crop=center" 
                     alt="Mathematics Blueprint" 
@@ -86,7 +84,7 @@ const Index = () => {
             {/* Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-64 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
                   <img 
                     src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=176&h=176&fit=crop&crop=center" 
                     alt="Science Blueprint" 
@@ -108,7 +106,7 @@ const Index = () => {
             {/* Social Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-64 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
                   <img 
                     src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=176&h=176&fit=crop&crop=center" 
                     alt="Social Science Blueprint" 
@@ -133,7 +131,7 @@ const Index = () => {
                 BEST VALUE 💡
               </div>
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-64 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
                   <img 
                     src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=176&h=176&fit=crop&crop=center" 
                     alt="Combo Pack Blueprint" 
@@ -264,4 +262,3 @@ const Index = () => {
 };
 
 export default Index;
-

@@ -114,7 +114,7 @@ const Science = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
           <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🔬</div>
@@ -122,7 +122,7 @@ const Science = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🧪</div>
@@ -130,7 +130,7 @@ const Science = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🌿</div>
@@ -138,7 +138,7 @@ const Science = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-4xl mb-2">⚛️</div>
@@ -150,7 +150,7 @@ const Science = () => {
 
           {/* Subject Video Embed */}
           <div className="max-w-4xl mx-auto">
-            <Card className="overflow-hidden shadow-xl border-2 border-teal-100">
+            <Card className="overflow-hidden shadow-xl">
               <CardContent className="p-0">
                 <div className="aspect-video bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center relative">
                   <div className="text-center text-white">
