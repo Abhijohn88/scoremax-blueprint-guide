@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -43,7 +44,8 @@ const Maths = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center px-4 py-2 bg-purple-100 rounded-full text-purple-800 text-sm font-medium mb-6">
-                📊 Mathematics Blueprint
+                <img src="/public/images/maths-icon.jpg" alt="Mathematics Blueprint" className="w-4 h-4 mr-2" style={{padding: 0, margin: 0}} />
+                Mathematics Blueprint
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Master <span className="text-purple-600">High-Scoring</span> Math Topics
@@ -80,21 +82,21 @@ const Maths = () => {
               <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <Target className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Spot High-Scoring Topics Instantly</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Spot High-Scoring Topics Instantly</h3>
               <p className="text-gray-600">Identify which theorems, formulas, and problem types appear most frequently in papers</p>
             </div>
             <div className="text-center">
               <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <Clock className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Focused on CBSE Past 10 Years</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Focused on CBSE Past 10 Years</h3>
               <p className="text-gray-600">Skip low-probability topics and double down on what consistently scores marks</p>
             </div>
             <div className="text-center">
               <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">⏱️ Saves Time During Final Revision</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Saves Time During Final Revision</h3>
               <p className="text-gray-600">Built to help you prioritize, not memorize everything</p>
             </div>
           </div>
@@ -104,7 +106,7 @@ const Maths = () => {
       {/* What's Inside - Product Showcase Images */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What's Inside? | Preview the Pages</h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video">
@@ -120,7 +122,7 @@ const Maths = () => {
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
                   <div className="text-center">
-                    <div className="text-4xl mb-2">📊</div>
+                    <img src="/public/images/maths-blueprint-overview.jpg" alt="Blueprint Overview" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                     <p className="text-purple-600 font-semibold">Blueprint Overview</p>
                   </div>
                 </div>
@@ -140,7 +142,7 @@ const Maths = () => {
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
                   <div className="text-center">
-                    <div className="text-4xl mb-2">📈</div>
+                    <img src="/public/images/maths-chapter-analysis.jpg" alt="Chapter Analysis" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                     <p className="text-purple-600 font-semibold">Chapter Analysis</p>
                   </div>
                 </div>
@@ -160,7 +162,7 @@ const Maths = () => {
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
                   <div className="text-center">
-                    <div className="text-4xl mb-2">🎯</div>
+                    <img src="/public/images/maths-topic-priorities.jpg" alt="Topic Priorities" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                     <p className="text-purple-600 font-semibold">Topic Priorities</p>
                   </div>
                 </div>
@@ -180,7 +182,7 @@ const Maths = () => {
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
                   <div className="text-center">
-                    <div className="text-4xl mb-2">📝</div>
+                    <img src="/public/images/maths-key-formulas.jpg" alt="Key Formulas" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                     <p className="text-purple-600 font-semibold">Key Formulas</p>
                   </div>
                 </div>

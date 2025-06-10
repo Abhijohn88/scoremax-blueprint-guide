@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -43,7 +42,8 @@ const Combo = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <div className="inline-flex items-center px-6 py-3 bg-orange-100 rounded-full text-orange-800 text-sm font-medium mb-6 animate-pulse">
-              💡 BEST VALUE
+              <img src="/public/images/best-value-icon.jpg" alt="Best Value" className="w-4 h-4 mr-2" style={{padding: 0, margin: 0}} />
+              BEST VALUE
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               <span className="text-orange-600">3 Subjects.</span> <span className="text-yellow-600">1 Smart Guide.</span>
@@ -95,27 +95,27 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-blue-100">
               <CardContent className="p-6">
                 <div className="bg-blue-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  📊
+                  <img src="/public/images/maths-icon.jpg" alt="Mathematics" className="w-6 h-6" style={{padding: 0, margin: 0}} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">📘 Maths Blueprint</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Maths Blueprint</h3>
                 <p className="text-gray-600">Strategic formula priorities and problem patterns based on 10-year trends</p>
               </CardContent>
             </Card>
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-green-100">
               <CardContent className="p-6">
                 <div className="bg-green-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  🔬
+                  <img src="/public/images/science-icon.jpg" alt="Science" className="w-6 h-6" style={{padding: 0, margin: 0}} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">🔬 Science Blueprint</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Science Blueprint</h3>
                 <p className="text-gray-600">Physics, Chemistry, Biology diagrams and concepts that score consistently</p>
               </CardContent>
             </Card>
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-100">
               <CardContent className="p-6">
                 <div className="bg-purple-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  🗺️
+                  <img src="/public/images/social-icon.jpg" alt="Social Science" className="w-6 h-6" style={{padding: 0, margin: 0}} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">🗺️ Social Science Blueprint</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science Blueprint</h3>
                 <p className="text-gray-600">History dates, geography maps, and civic concepts that appear frequently</p>
               </CardContent>
             </Card>
@@ -153,12 +153,12 @@ const Combo = () => {
       {/* 3x3 Product Images Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What's Inside? | Preview the Pages</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
               <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">📊</div>
+                  <img src="/public/images/combo-preview-1.jpg" alt="Combo Preview 1" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-purple-600 font-semibold text-sm">combo1.png</p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
               <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">📈</div>
+                  <img src="/public/images/combo-preview-2.jpg" alt="Combo Preview 2" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-purple-600 font-semibold text-sm">combo2.png</p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
               <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">🎯</div>
+                  <img src="/public/images/combo-preview-3.jpg" alt="Combo Preview 3" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-purple-600 font-semibold text-sm">combo3.png</p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
               <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">🔬</div>
+                  <img src="/public/images/combo-preview-4.jpg" alt="Combo Preview 4" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-teal-600 font-semibold text-sm">combo4.png</p>
                 </div>
               </div>
@@ -190,7 +190,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
               <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">🧪</div>
+                  <img src="/public/images/combo-preview-5.jpg" alt="Combo Preview 5" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-teal-600 font-semibold text-sm">combo5.png</p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
               <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">🌿</div>
+                  <img src="/public/images/combo-preview-6.jpg" alt="Combo Preview 6" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-teal-600 font-semibold text-sm">combo6.png</p>
                 </div>
               </div>
@@ -206,7 +206,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
               <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">🗺️</div>
+                  <img src="/public/images/combo-preview-7.jpg" alt="Combo Preview 7" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-orange-600 font-semibold text-sm">combo7.png</p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
               <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">📅</div>
+                  <img src="/public/images/combo-preview-8.jpg" alt="Combo Preview 8" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-orange-600 font-semibold text-sm">combo8.png</p>
                 </div>
               </div>
@@ -222,7 +222,7 @@ const Combo = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
               <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl mb-2">⚖️</div>
+                  <img src="/public/images/combo-preview-9.jpg" alt="Combo Preview 9" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
                   <p className="text-orange-600 font-semibold text-sm">combo9.png</p>
                 </div>
               </div>
