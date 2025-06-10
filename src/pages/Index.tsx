@@ -69,8 +69,10 @@ const Index = () => {
                     alt="Mathematics Blueprint" 
                     className="w-16 h-16 object-contain"
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'block';
+                      const target = e.currentTarget as HTMLImageElement;
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      target.style.display = 'none';
+                      if (fallback) fallback.style.display = 'block';
                     }}
                   />
                   <span className="text-white text-2xl font-bold hidden">📊</span>
@@ -96,8 +98,10 @@ const Index = () => {
                     alt="Science Blueprint" 
                     className="w-16 h-16 object-contain"
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'block';
+                      const target = e.currentTarget as HTMLImageElement;
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      target.style.display = 'none';
+                      if (fallback) fallback.style.display = 'block';
                     }}
                   />
                   <span className="text-white text-2xl font-bold hidden">🔬</span>
@@ -123,8 +127,10 @@ const Index = () => {
                     alt="Social Science Blueprint" 
                     className="w-16 h-16 object-contain"
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'block';
+                      const target = e.currentTarget as HTMLImageElement;
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      target.style.display = 'none';
+                      if (fallback) fallback.style.display = 'block';
                     }}
                   />
                   <span className="text-white text-2xl font-bold hidden">🗺️</span>
@@ -153,8 +159,10 @@ const Index = () => {
                     alt="Combo Pack Blueprint" 
                     className="w-16 h-16 object-contain"
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'block';
+                      const target = e.currentTarget as HTMLImageElement;
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      target.style.display = 'none';
+                      if (fallback) fallback.style.display = 'block';
                     }}
                   />
                   <span className="text-white text-2xl font-bold hidden">🌟</span>
