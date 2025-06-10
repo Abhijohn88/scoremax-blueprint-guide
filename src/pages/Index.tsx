@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
@@ -65,17 +64,10 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
                   <img 
-                    src="/maths-icon.png" 
+                    src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=64&h=64&fit=crop&crop=center" 
                     alt="Mathematics Blueprint" 
-                    className="w-16 h-16 object-contain"
-                    onError={(e) => {
-                      const target = e.currentTarget as HTMLImageElement;
-                      const fallback = target.nextElementSibling as HTMLElement;
-                      target.style.display = 'none';
-                      if (fallback) fallback.style.display = 'block';
-                    }}
+                    className="w-16 h-16 object-contain rounded-lg"
                   />
-                  <span className="text-white text-2xl font-bold hidden">📊</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
                 <div className="mb-4">
@@ -94,17 +86,10 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
                   <img 
-                    src="/science-icon.png" 
+                    src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=64&h=64&fit=crop&crop=center" 
                     alt="Science Blueprint" 
-                    className="w-16 h-16 object-contain"
-                    onError={(e) => {
-                      const target = e.currentTarget as HTMLImageElement;
-                      const fallback = target.nextElementSibling as HTMLElement;
-                      target.style.display = 'none';
-                      if (fallback) fallback.style.display = 'block';
-                    }}
+                    className="w-16 h-16 object-contain rounded-lg"
                   />
-                  <span className="text-white text-2xl font-bold hidden">🔬</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
                 <div className="mb-4">
@@ -123,17 +108,10 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
                   <img 
-                    src="/social-icon.png" 
+                    src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=64&h=64&fit=crop&crop=center" 
                     alt="Social Science Blueprint" 
-                    className="w-16 h-16 object-contain"
-                    onError={(e) => {
-                      const target = e.currentTarget as HTMLImageElement;
-                      const fallback = target.nextElementSibling as HTMLElement;
-                      target.style.display = 'none';
-                      if (fallback) fallback.style.display = 'block';
-                    }}
+                    className="w-16 h-16 object-contain rounded-lg"
                   />
-                  <span className="text-white text-2xl font-bold hidden">🗺️</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
                 <div className="mb-4">
@@ -155,17 +133,10 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
                   <img 
-                    src="/combo-icon.png" 
+                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=64&h=64&fit=crop&crop=center" 
                     alt="Combo Pack Blueprint" 
-                    className="w-16 h-16 object-contain"
-                    onError={(e) => {
-                      const target = e.currentTarget as HTMLImageElement;
-                      const fallback = target.nextElementSibling as HTMLElement;
-                      target.style.display = 'none';
-                      if (fallback) fallback.style.display = 'block';
-                    }}
+                    className="w-16 h-16 object-contain rounded-lg"
                   />
-                  <span className="text-white text-2xl font-bold hidden">🌟</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
                 <div className="mb-4">
