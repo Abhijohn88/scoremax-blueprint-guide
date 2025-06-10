@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -51,7 +52,7 @@ const Science = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center px-4 py-2 bg-teal-100 rounded-full text-teal-800 text-sm font-medium mb-6">
-                🔬 Science Blueprint
+                Science Blueprint
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Excel in <span className="text-teal-600">Physics, Chemistry & Biology</span>
@@ -88,21 +89,21 @@ const Science = () => {
               <div className="bg-teal-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <Target className="w-8 h-8 text-teal-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Focus on High-Yield Topics</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Focus on High-Yield Topics</h3>
               <p className="text-gray-600">Identify which diagrams, reactions, and processes appear most frequently in papers</p>
             </div>
             <div className="text-center">
               <div className="bg-teal-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <Clock className="w-8 h-8 text-teal-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">⏱️ Saves Time During Revision</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Saves Time During Revision</h3>
               <p className="text-gray-600">Skip low-probability topics and master what consistently appears in exams</p>
             </div>
             <div className="text-center">
               <div className="bg-teal-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-teal-600 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">✅ Built to Help You Prioritize</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Built to Help You Prioritize</h3>
               <p className="text-gray-600">Not memorize everything, but strategically focus on proven scoring concepts</p>
             </div>
           </div>
@@ -112,38 +113,42 @@ const Science = () => {
       {/* What's Inside - Product Showcase Images */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What's Inside? | Preview the Pages</h2>
           <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">🔬</div>
-                  <p className="text-teal-600 font-semibold">science1.png</p>
-                </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/public/images/science1.jpg" 
+                  alt="Science Blueprint Page 1" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">🧪</div>
-                  <p className="text-teal-600 font-semibold">science2.png</p>
-                </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/public/images/science2.jpg" 
+                  alt="Science Blueprint Page 2" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">🌿</div>
-                  <p className="text-teal-600 font-semibold">science3.png</p>
-                </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/public/images/science3.jpg" 
+                  alt="Science Blueprint Page 3" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">⚛️</div>
-                  <p className="text-teal-600 font-semibold">science4.png</p>
-                </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/public/images/science4.jpg" 
+                  alt="Science Blueprint Page 4" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
               </div>
             </div>
           </div>
@@ -173,8 +178,8 @@ const Science = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="bg-red-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                  <span className="text-2xl">⚛️</span>
+                <div className="bg-red-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <img src="/public/images/physics-icon.jpg" alt="Physics" className="w-8 h-8 p-0 m-0" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Physics</h3>
                 <p className="text-gray-600">Light, electricity, magnetic effects, and natural phenomena - focus on diagrams and numerical patterns</p>
@@ -182,8 +187,8 @@ const Science = () => {
             </Card>
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                  <span className="text-2xl">🧪</span>
+                <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <img src="/public/images/chemistry-icon.jpg" alt="Chemistry" className="w-8 h-8 p-0 m-0" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Chemistry</h3>
                 <p className="text-gray-600">Acids, bases, metals, carbon compounds - prioritize reactions and equations that score consistently</p>
@@ -191,8 +196,8 @@ const Science = () => {
             </Card>
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4">
-                  <span className="text-2xl">🌿</span>
+                <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <img src="/public/images/biology-icon.jpg" alt="Biology" className="w-8 h-8 p-0 m-0" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Biology</h3>
                 <p className="text-gray-600">Life processes, control systems, reproduction - master diagrams and processes that appear frequently</p>

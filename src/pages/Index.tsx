@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
@@ -62,67 +61,73 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Maths Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
+              <CardContent className="p-0">
+                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="/lovable-uploads/b37f5e31-5226-4aeb-835b-7e65c6fbab12.png" 
-                    alt="Mathematics Blueprint promotional overview" 
-                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                    src="/public/images/maths-card.jpg" 
+                    alt="Mathematics Blueprint" 
+                    className="w-full h-full object-cover p-0 m-0"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
-                <div className="mb-4">
-                  <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
-                  <div className="text-lg font-bold text-purple-600">₹199</div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
+                  <div className="mb-4">
+                    <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+                    <div className="text-lg font-bold text-purple-600">₹199</div>
+                  </div>
+                  <p className="text-gray-600 mb-4">Strategic focus on high-scoring topics and formula patterns</p>
+                  <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
+                    <Link to="/maths">Explore Maths</Link>
+                  </Button>
                 </div>
-                <p className="text-gray-600 mb-4">Strategic focus on high-scoring topics and formula patterns</p>
-                <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
-                  <Link to="/maths">Explore Maths</Link>
-                </Button>
               </CardContent>
             </Card>
 
             {/* Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
+              <CardContent className="p-0">
+                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=176&h=176&fit=crop&crop=center" 
+                    src="/public/images/science-card.jpg" 
                     alt="Science Blueprint" 
-                    className="w-44 h-44 object-cover rounded-lg shadow-lg"
+                    className="w-full h-full object-cover p-0 m-0"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
-                <div className="mb-4">
-                  <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
-                  <div className="text-lg font-bold text-teal-600">₹199</div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
+                  <div className="mb-4">
+                    <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+                    <div className="text-lg font-bold text-teal-600">₹199</div>
+                  </div>
+                  <p className="text-gray-600 mb-4">Physics, Chemistry, Biology - All covered strategically</p>
+                  <Button asChild variant="outline" className="w-full group-hover:bg-teal-50 group-hover:border-teal-300">
+                    <Link to="/science">Explore Science</Link>
+                  </Button>
                 </div>
-                <p className="text-gray-600 mb-4">Physics, Chemistry, Biology - All covered strategically</p>
-                <Button asChild variant="outline" className="w-full group-hover:bg-teal-50 group-hover:border-teal-300">
-                  <Link to="/science">Explore Science</Link>
-                </Button>
               </CardContent>
             </Card>
 
             {/* Social Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
+              <CardContent className="p-0">
+                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=176&h=176&fit=crop&crop=center" 
+                    src="/public/images/social-card.jpg" 
                     alt="Social Science Blueprint" 
-                    className="w-44 h-44 object-cover rounded-lg shadow-lg"
+                    className="w-full h-full object-cover p-0 m-0"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
-                <div className="mb-4">
-                  <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
-                  <div className="text-lg font-bold text-orange-600">₹199</div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
+                  <div className="mb-4">
+                    <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+                    <div className="text-lg font-bold text-orange-600">₹199</div>
+                  </div>
+                  <p className="text-gray-600 mb-4">History, Geography, Civics, Economics made strategic</p>
+                  <Button asChild variant="outline" className="w-full group-hover:bg-orange-50 group-hover:border-orange-300">
+                    <Link to="/social">Explore Social</Link>
+                  </Button>
                 </div>
-                <p className="text-gray-600 mb-4">History, Geography, Civics, Economics made strategic</p>
-                <Button asChild variant="outline" className="w-full group-hover:bg-orange-50 group-hover:border-orange-300">
-                  <Link to="/social">Explore Social</Link>
-                </Button>
               </CardContent>
             </Card>
 
@@ -131,23 +136,25 @@ const Index = () => {
               <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
                 BEST VALUE 💡
               </div>
-              <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
+              <CardContent className="p-0">
+                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=176&h=176&fit=crop&crop=center" 
+                    src="/public/images/combo-card.jpg" 
                     alt="Combo Pack Blueprint" 
-                    className="w-44 h-44 object-cover rounded-lg shadow-lg"
+                    className="w-full h-full object-cover p-0 m-0"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
-                <div className="mb-4">
-                  <div className="text-sm text-gray-500 line-through">MRP: ₹599</div>
-                  <div className="text-lg font-bold text-blue-600">₹299</div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
+                  <div className="mb-4">
+                    <div className="text-sm text-gray-500 line-through">MRP: ₹599</div>
+                    <div className="text-lg font-bold text-blue-600">₹299</div>
+                  </div>
+                  <p className="text-gray-600 mb-4">All 3 subjects + bonus planning tools</p>
+                  <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
+                    <Link to="/combo">Get Combo Blueprint</Link>
+                  </Button>
                 </div>
-                <p className="text-gray-600 mb-4">All 3 subjects + bonus planning tools</p>
-                <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
-                  <Link to="/combo">Get Combo Blueprint</Link>
-                </Button>
               </CardContent>
             </Card>
           </div>
@@ -166,28 +173,28 @@ const Index = () => {
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
                 <TrendingUp className="w-8 h-8 text-blue-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">📌 Based on 10-Year Trend Analysis</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Based on 10-Year Trend Analysis</h3>
               <p className="text-gray-600">Built using CBSE past paper trends to highlight scoring topics</p>
             </div>
             <div className="text-center group">
               <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                 <Target className="w-8 h-8 text-green-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">🧠 Helps You Prioritize</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Helps You Prioritize</h3>
               <p className="text-gray-600">Don't guess what to revise. We guide you to what matters</p>
             </div>
             <div className="text-center group">
               <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
                 <CheckCircle className="w-8 h-8 text-purple-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">📋 Not a Textbook</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Not a Textbook</h3>
               <p className="text-gray-600">We don't explain. We highlight. You learn smarter</p>
             </div>
             <div className="text-center group">
               <div className="bg-orange-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
                 <Clock className="w-8 h-8 text-orange-600 mx-auto" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">🎓 Student-Focused</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Student-Focused</h3>
               <p className="text-gray-600">Crafted for students who need to plan, not start from scratch</p>
             </div>
           </div>
