@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
@@ -62,11 +63,11 @@ const Index = () => {
             {/* Maths Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-48 rounded-lg mb-4 flex items-center justify-center p-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=64&h=64&fit=crop&crop=center" 
+                    src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=128&h=128&fit=crop&crop=center" 
                     alt="Mathematics Blueprint" 
-                    className="w-16 h-16 object-contain rounded-lg"
+                    className="w-32 h-32 object-contain rounded-lg"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
@@ -84,11 +85,11 @@ const Index = () => {
             {/* Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-48 rounded-lg mb-4 flex items-center justify-center p-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=64&h=64&fit=crop&crop=center" 
+                    src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=128&h=128&fit=crop&crop=center" 
                     alt="Science Blueprint" 
-                    className="w-16 h-16 object-contain rounded-lg"
+                    className="w-32 h-32 object-contain rounded-lg"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
@@ -106,11 +107,11 @@ const Index = () => {
             {/* Social Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-48 rounded-lg mb-4 flex items-center justify-center p-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=64&h=64&fit=crop&crop=center" 
+                    src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=128&h=128&fit=crop&crop=center" 
                     alt="Social Science Blueprint" 
-                    className="w-16 h-16 object-contain rounded-lg"
+                    className="w-32 h-32 object-contain rounded-lg"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
@@ -131,11 +132,11 @@ const Index = () => {
                 BEST VALUE 💡
               </div>
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-48 rounded-lg mb-4 flex items-center justify-center p-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=64&h=64&fit=crop&crop=center" 
+                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=128&h=128&fit=crop&crop=center" 
                     alt="Combo Pack Blueprint" 
-                    className="w-16 h-16 object-contain rounded-lg"
+                    className="w-32 h-32 object-contain rounded-lg"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
