@@ -63,8 +63,8 @@ const Index = () => {
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-0">
                 <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
-                  <img 
-                    src="/public/images/maths-card.jpg" 
+               <img 
+                    src="/images/maths-card.jpg" 
                     alt="Mathematics Blueprint" 
                     className="w-full h-full object-cover p-0 m-0"
                   />
@@ -88,7 +88,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="/public/images/science-card.jpg" 
+                    src="/images/science-card.jpg" 
                     alt="Science Blueprint" 
                     className="w-full h-full object-cover p-0 m-0"
                   />
@@ -112,7 +112,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="/public/images/social-card.jpg" 
+                    src="/images/social-card.jpg" 
                     alt="Social Science Blueprint" 
                     className="w-full h-full object-cover p-0 m-0"
                   />
@@ -139,7 +139,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
                   <img 
-                    src="/public/images/combo-card.jpg" 
+                    src="/images/combo-card.jpg" 
                     alt="Combo Pack Blueprint" 
                     className="w-full h-full object-cover p-0 m-0"
                   />
