@@ -63,8 +63,17 @@ const Index = () => {
             {/* Maths Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-32 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">📊</span>
+                <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                  <img 
+                    src="/maths-icon.png" 
+                    alt="Mathematics Blueprint" 
+                    className="w-16 h-16 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="text-white text-2xl font-bold hidden">📊</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
                 <div className="mb-4">
@@ -81,8 +90,17 @@ const Index = () => {
             {/* Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-32 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">🔬</span>
+                <div className="bg-gradient-to-br from-teal-500 to-teal-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                  <img 
+                    src="/science-icon.png" 
+                    alt="Science Blueprint" 
+                    className="w-16 h-16 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="text-white text-2xl font-bold hidden">🔬</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
                 <div className="mb-4">
@@ -99,8 +117,17 @@ const Index = () => {
             {/* Social Science Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-32 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">🗺️</span>
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                  <img 
+                    src="/social-icon.png" 
+                    alt="Social Science Blueprint" 
+                    className="w-16 h-16 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="text-white text-2xl font-bold hidden">🗺️</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
                 <div className="mb-4">
@@ -120,8 +147,17 @@ const Index = () => {
                 BEST VALUE 💡
               </div>
               <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-32 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">🌟</span>
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 h-32 rounded-lg mb-4 flex items-center justify-center p-4">
+                  <img 
+                    src="/combo-icon.png" 
+                    alt="Combo Pack Blueprint" 
+                    className="w-16 h-16 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="text-white text-2xl font-bold hidden">🌟</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
                 <div className="mb-4">
