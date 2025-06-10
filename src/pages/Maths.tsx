@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users, Play, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, ExternalLink } from 'lucide-react';
 
 const Maths = () => {
   const scrollToBuySection = () => {
@@ -106,59 +105,39 @@ const Maths = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
+          <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/b37f5e31-5226-4aeb-835b-7e65c6fbab12.png" 
-                  alt="Mathematics blueprint promotional overview" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/35dc9e9b-0ce7-41be-a4ca-21c02d3e2b49.png" 
-                  alt="Chapter-wise analysis and breakdown pages" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/fe5c39c8-0de7-4a4b-873b-e6b6b8dcf9e5.png" 
-                  alt="Mathematics blueprint 3D product mockup" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/314fa088-4615-4b32-b974-e3e4d5a8fec4.png" 
-                  alt="Key mathematical formulas with explanations for CBSE Class 10" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Subject Video Embed */}
-          <div className="max-w-4xl mx-auto">
-            <Card className="overflow-hidden shadow-xl">
-              <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center relative">
-                  <div className="text-center text-white">
-                    <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                    <h3 className="text-2xl font-bold mb-2">maths_video.mp4</h3>
-                    <p className="text-purple-100">See how to use this blueprint for maximum scoring</p>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📊</div>
+                  <p className="text-purple-600 font-semibold">Blueprint Overview</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📈</div>
+                  <p className="text-purple-600 font-semibold">Chapter Analysis</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">🎯</div>
+                  <p className="text-purple-600 font-semibold">Topic Priorities</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📝</div>
+                  <p className="text-purple-600 font-semibold">Key Formulas</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
