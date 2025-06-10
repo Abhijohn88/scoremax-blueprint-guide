@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -107,35 +108,39 @@ const Maths = () => {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">🔍 What's Inside? | Preview the Pages</h2>
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">📊</div>
-                  <p className="text-purple-600 font-semibold">maths1.png</p>
-                </div>
+              <div className="aspect-video">
+                <img 
+                  src="/lovable-uploads/b37f5e31-5226-4aeb-835b-7e65c6fbab12.png" 
+                  alt="Mathematics blueprint promotional overview" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">📈</div>
-                  <p className="text-purple-600 font-semibold">maths2.png</p>
-                </div>
+              <div className="aspect-video">
+                <img 
+                  src="/lovable-uploads/35dc9e9b-0ce7-41be-a4ca-21c02d3e2b49.png" 
+                  alt="Chapter-wise analysis and breakdown pages" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">🎯</div>
-                  <p className="text-purple-600 font-semibold">maths3.png</p>
-                </div>
+              <div className="aspect-video">
+                <img 
+                  src="/lovable-uploads/fe5c39c8-0de7-4a4b-873b-e6b6b8dcf9e5.png" 
+                  alt="Mathematics blueprint 3D product mockup" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">📝</div>
-                  <p className="text-purple-600 font-semibold">maths4.png</p>
-                </div>
+              <div className="aspect-video">
+                <img 
+                  src="/lovable-uploads/314fa088-4615-4b32-b974-e3e4d5a8fec4.png" 
+                  alt="Key mathematical formulas with explanations for CBSE Class 10" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

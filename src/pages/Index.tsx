@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
@@ -64,9 +65,9 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-purple-500 to-purple-600 h-64 rounded-lg mb-4 flex items-center justify-center p-1">
                   <img 
-                    src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=176&h=176&fit=crop&crop=center" 
-                    alt="Mathematics Blueprint" 
-                    className="w-44 h-44 object-cover rounded-lg shadow-lg"
+                    src="/lovable-uploads/b37f5e31-5226-4aeb-835b-7e65c6fbab12.png" 
+                    alt="Mathematics Blueprint promotional overview" 
+                    className="w-full h-full object-cover rounded-lg shadow-lg"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
