@@ -115,7 +115,8 @@ const Maths = () => {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextEl) nextEl.style.display = 'flex';
                   }}
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
@@ -134,7 +135,8 @@ const Maths = () => {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextEl) nextEl.style.display = 'flex';
                   }}
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
@@ -153,7 +155,8 @@ const Maths = () => {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextEl) nextEl.style.display = 'flex';
                   }}
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
@@ -172,7 +175,8 @@ const Maths = () => {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextEl) nextEl.style.display = 'flex';
                   }}
                 />
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
