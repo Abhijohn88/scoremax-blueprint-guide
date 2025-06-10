@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -110,7 +109,7 @@ const Maths = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video">
                 <img 
-                  src="/lovable-uploads/b37f5e31-5226-4aeb-835b-7e65c6fbab12.png" 
+                  src="/lovable-uploads/43b01d8d-7f04-438c-bae5-bc6c34502dca.png" 
                   alt="Mathematics blueprint promotional overview showing CBSE Class 10 study guide" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -130,7 +129,7 @@ const Maths = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video">
                 <img 
-                  src="/lovable-uploads/35dc9e9b-0ce7-41be-a4ca-21c02d3e2b49.png" 
+                  src="/lovable-uploads/3cf7413f-7610-4d68-8b9f-74ccb5e2cb70.png" 
                   alt="Chapter-wise analysis and breakdown pages from mathematics blueprint" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -150,7 +149,7 @@ const Maths = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video">
                 <img 
-                  src="/lovable-uploads/fe5c39c8-0de7-4a4b-873b-e6b6b8dcf9e5.png" 
+                  src="/lovable-uploads/4a5a7138-545c-4401-88f4-5d8bba1d7f86.png" 
                   alt="Mathematics blueprint 3D product mockup showing study materials" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -170,7 +169,7 @@ const Maths = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video">
                 <img 
-                  src="/lovable-uploads/314fa088-4615-4b32-b974-e3e4d5a8fec4.png" 
+                  src="/lovable-uploads/9c36ec71-d9a8-47be-b585-339458f0853e.png" 
                   alt="Key mathematical formulas with explanations for CBSE Class 10" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
