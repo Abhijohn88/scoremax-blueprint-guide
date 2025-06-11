@@ -53,113 +53,115 @@ const Index = () => {
       </section>
 
       {/* Product Cards Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Choose Your Strategic Blueprint
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Maths Card */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardContent className="p-0">
-                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
-               <img 
-                    src="/images/maths-card.jpg" 
-                    alt="Mathematics Blueprint" 
-                    className="w-full h-full object-cover p-0 m-0"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
-                  <div className="mb-4">
-                    <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
-                    <div className="text-lg font-bold text-purple-600">₹199</div>
-                  </div>
-                  <p className="text-gray-600 mb-4">Strategic focus on high-scoring topics and formula patterns</p>
-                  <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
-                    <Link to="/maths">Explore Maths</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+<section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      Choose Your Strategic Blueprint
+    </h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            {/* Science Card */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardContent className="p-0">
-                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
-                  <img 
-                    src="/images/science-card.jpg" 
-                    alt="Science Blueprint" 
-                    className="w-full h-full object-cover p-0 m-0"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
-                  <div className="mb-4">
-                    <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
-                    <div className="text-lg font-bold text-teal-600">₹199</div>
-                  </div>
-                  <p className="text-gray-600 mb-4">Physics, Chemistry, Biology - All covered strategically</p>
-                  <Button asChild variant="outline" className="w-full group-hover:bg-teal-50 group-hover:border-teal-300">
-                    <Link to="/science">Explore Science</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Social Science Card */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardContent className="p-0">
-                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
-                  <img 
-                    src="/images/social-card.jpg" 
-                    alt="Social Science Blueprint" 
-                    className="w-full h-full object-cover p-0 m-0"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
-                  <div className="mb-4">
-                    <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
-                    <div className="text-lg font-bold text-orange-600">₹199</div>
-                  </div>
-                  <p className="text-gray-600 mb-4">History, Geography, Civics, Economics made strategic</p>
-                  <Button asChild variant="outline" className="w-full group-hover:bg-orange-50 group-hover:border-orange-300">
-                    <Link to="/social">Explore Social</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Combo Card */}
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 shadow-lg relative overflow-hidden">
-              <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
-                BEST VALUE
-              </div>
-              <CardContent className="p-0">
-                <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
-                  <img 
-                    src="/images/combo-card.jpg" 
-                    alt="Combo Pack Blueprint" 
-                    className="w-full h-full object-cover p-0 m-0"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
-                  <div className="mb-4">
-                    <div className="text-sm text-gray-500 line-through">MRP: ₹599</div>
-                    <div className="text-lg font-bold text-blue-600">₹299</div>
-                  </div>
-                  <p className="text-gray-600 mb-4">All 3 subjects + bonus planning tools</p>
-                  <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
-                    <Link to="/combo">Get Combo Blueprint</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+      {/* Maths Card */}
+      <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
+        <CardContent className="p-0">
+          <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
+            <img 
+              src="./images/maths-card.png" 
+              alt="Mathematics Blueprint" 
+              className="w-full h-full object-cover p-0 m-0"
+            />
           </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
+            <div className="mb-4">
+              <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+              <div className="text-lg font-bold text-purple-600">₹199</div>
+            </div>
+            <p className="text-gray-600 mb-4">Strategic focus on high-scoring topics and formula patterns</p>
+            <Button asChild variant="outline" className="w-full group-hover:bg-purple-50 group-hover:border-purple-300">
+              <Link to="/maths">Explore Maths</Link>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Science Card */}
+      <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
+        <CardContent className="p-0">
+          <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
+            <img 
+              src="./images/science-card.png" 
+              alt="Science Blueprint" 
+              className="w-full h-full object-cover p-0 m-0"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Science</h3>
+            <div className="mb-4">
+              <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+              <div className="text-lg font-bold text-teal-600">₹199</div>
+            </div>
+            <p className="text-gray-600 mb-4">Physics, Chemistry, Biology - All covered strategically</p>
+            <Button asChild variant="outline" className="w-full group-hover:bg-teal-50 group-hover:border-teal-300">
+              <Link to="/science">Explore Science</Link>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Social Science Card */}
+      <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
+        <CardContent className="p-0">
+          <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
+            <img 
+              src="./images/social-card.png" 
+              alt="Social Science Blueprint" 
+              className="w-full h-full object-cover p-0 m-0"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science</h3>
+            <div className="mb-4">
+              <div className="text-sm text-gray-500 line-through">MRP: ₹299</div>
+              <div className="text-lg font-bold text-orange-600">₹199</div>
+            </div>
+            <p className="text-gray-600 mb-4">History, Geography, Civics, Economics made strategic</p>
+            <Button asChild variant="outline" className="w-full group-hover:bg-orange-50 group-hover:border-orange-300">
+              <Link to="/social">Explore Social</Link>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Combo Card */}
+      <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 shadow-lg relative overflow-hidden">
+        <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
+          BEST VALUE
         </div>
-      </section>
+        <CardContent className="p-0">
+          <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
+            <img 
+              src="./images/combo-card.png" 
+              alt="Combo Pack Blueprint" 
+              className="w-full h-full object-cover p-0 m-0"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Combo Pack</h3>
+            <div className="mb-4">
+              <div className="text-sm text-gray-500 line-through">MRP: ₹599</div>
+              <div className="text-lg font-bold text-blue-600">₹299</div>
+            </div>
+            <p className="text-gray-600 mb-4">All 3 subjects + bonus planning tools</p>
+            <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
+              <Link to="/combo">Get Combo Blueprint</Link>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+    </div>
+  </div>
+</section>
 
       {/* Why ScoreMAX Works */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
