@@ -134,7 +134,7 @@ const Index = () => {
             {/* Combo Card */}
             <Card className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 shadow-lg relative overflow-hidden">
               <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
-                BEST VALUE 💡
+                BEST VALUE
               </div>
               <CardContent className="p-0">
                 <div className="h-64 p-0 m-0 border-0 rounded-t-lg overflow-hidden">
@@ -248,10 +248,6 @@ const Index = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4 mb-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">📘</a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">📷</a>
-              </div>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8">
