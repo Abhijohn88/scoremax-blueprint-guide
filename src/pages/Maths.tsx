@@ -44,7 +44,7 @@ const Maths = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center px-4 py-2 bg-purple-100 rounded-full text-purple-800 text-sm font-medium mb-6">
-                <img src="/public/images/maths-icon.jpg" alt="Mathematics Blueprint" className="w-4 h-4 mr-2" style={{padding: 0, margin: 0}} />
+                <img src="/images/maths-icon.jpg" alt="Mathematics Blueprint" className="w-4 h-4 mr-2" style={{padding: 0, margin: 0}} />
                 Mathematics Blueprint
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
