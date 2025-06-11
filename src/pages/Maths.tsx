@@ -103,94 +103,62 @@ const Maths = () => {
         </div>
       </section>
 
-      {/* What's Inside - Product Showcase Images */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What's Inside? | Preview the Pages</h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/43b01d8d-7f04-438c-bae5-bc6c34502dca.png" 
-                  alt="Mathematics blueprint promotional overview showing CBSE Class 10 study guide" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextEl) nextEl.style.display = 'flex';
-                  }}
-                />
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
-                  <div className="text-center">
-                    <img src="/public/images/maths-blueprint-overview.jpg" alt="Blueprint Overview" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                    <p className="text-purple-600 font-semibold">Blueprint Overview</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/3cf7413f-7610-4d68-8b9f-74ccb5e2cb70.png" 
-                  alt="Chapter-wise analysis and breakdown pages from mathematics blueprint" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextEl) nextEl.style.display = 'flex';
-                  }}
-                />
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
-                  <div className="text-center">
-                    <img src="/public/images/maths-chapter-analysis.jpg" alt="Chapter Analysis" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                    <p className="text-purple-600 font-semibold">Chapter Analysis</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/4a5a7138-545c-4401-88f4-5d8bba1d7f86.png" 
-                  alt="Mathematics blueprint 3D product mockup showing study materials" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextEl) nextEl.style.display = 'flex';
-                  }}
-                />
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
-                  <div className="text-center">
-                    <img src="/public/images/maths-topic-priorities.jpg" alt="Topic Priorities" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                    <p className="text-purple-600 font-semibold">Topic Priorities</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <img 
-                  src="/lovable-uploads/9c36ec71-d9a8-47be-b585-339458f0853e.png" 
-                  alt="Key mathematical formulas with explanations for CBSE Class 10" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextEl) nextEl.style.display = 'flex';
-                  }}
-                />
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center" style={{display: 'none'}}>
-                  <div className="text-center">
-                    <img src="/public/images/maths-key-formulas.jpg" alt="Key Formulas" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                    <p className="text-purple-600 font-semibold">Key Formulas</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+{/* What's Inside - Product Showcase Images */}
+<section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+      What's Inside? | Preview the Pages
+    </h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      {/* Image 1 */}
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="aspect-[3/4]">
+          <img 
+            src="/images/maths1.png" 
+            alt="Maths Overview Page" 
+            className="w-full h-full object-cover"
+          />
         </div>
-      </section>
+      </div>
+
+      {/* Image 2 */}
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="aspect-[3/4]">
+          <img 
+            src="/images/maths2.png" 
+            alt="Chapter-wise Analysis" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Image 3 */}
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="aspect-[3/4]">
+          <img 
+            src="/images/maths3.png" 
+            alt="Maths Blueprint Promo" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Image 4 */}
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="aspect-[3/4]">
+          <img 
+            src="/images/maths4.png" 
+            alt="Formula Guide" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Who Should Use It */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
