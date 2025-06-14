@@ -56,7 +56,7 @@ const Social = () => {
                 <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Social Blueprint
                 </Button>
-                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-orange-300 text-orange-600 hover:bg-orange-50">
+                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-orange-600 text-orange-600 bg-white hover:bg-orange-50 animate-flash">
                   <Link to="/combo">View Combo Pack</Link>
                 </Button>
               </div>
@@ -304,7 +304,7 @@ const Social = () => {
               <ExternalLink className="w-5 h-5 mr-2" />
               Buy Now – ₹199
             </Button>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-3 text-lg rounded-full">
+            <Button asChild variant="outline" className="border-orange-600 text-orange-600 bg-white hover:bg-orange-50 px-8 py-3 text-lg rounded-full animate-flash">
               <Link to="/combo">Save with Combo Pack</Link>
             </Button>
           </div>

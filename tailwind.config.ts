@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -80,12 +81,25 @@ export default {
 				blink: {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0' },
+				},
+				flash: {
+					'0%, 100%': { 
+						backgroundColor: 'white',
+						color: 'currentColor',
+						borderColor: 'currentColor'
+					},
+					'50%': { 
+						backgroundColor: 'currentColor',
+						color: 'white',
+						borderColor: 'currentColor'
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'blink': 'blink 1s step-start infinite',
+				'flash': 'flash 1.5s ease-in-out infinite',
 			}
 		}
 	},

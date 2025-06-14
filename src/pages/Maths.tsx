@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -56,10 +55,9 @@ const Maths = () => {
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Math Blueprint
                 </Button>
-            <Button asChild className="px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full shadow-md border border-purple-300 animate-pulse"
->
-  <Link to="/combo">Save with Combo Pack</Link>
-</Button>
+            <Button asChild className="px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full shadow-md border border-purple-300 animate-flash">
+              <Link to="/combo">Save with Combo Pack</Link>
+            </Button>
 
               </div>
             </div>
@@ -104,62 +102,59 @@ const Maths = () => {
         </div>
       </section>
 
-{/* What's Inside - Product Showcase Images */}
-<section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-      What's Inside? | Preview the Pages
-    </h2>
-<div className="grid md:grid-cols-4 gap-8">
-  {/* Image 1 */}
-  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-    <div className="aspect-video">
-      <img src="/images/maths1.png" alt="ScoreMAX Book Mockup" className="w-full h-full object-cover" />
-    </div>
-    <div className="p-4 text-center">
-      <h3 className="text-lg font-bold text-purple-700 mb-1">Why ScoreMAX Blueprint?</h3>
-      <p className="text-sm text-gray-600">Your shortcut to knowing what matters most.</p>
-    </div>
-  </div>
+      {/* What's Inside - Product Showcase Images */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            What's Inside? | Preview the Pages
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {/* Image 1 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <img src="/images/maths1.png" alt="ScoreMAX Book Mockup" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-purple-700 mb-1">Why ScoreMAX Blueprint?</h3>
+                <p className="text-sm text-gray-600">Your shortcut to knowing what matters most.</p>
+              </div>
+            </div>
 
-  {/* Image 2 */}
-  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-    <div className="aspect-video">
-      <img src="/images/maths2.png" alt="Math Features Poster" className="w-full h-full object-cover" />
-    </div>
-    <div className="p-4 text-center">
-      <h3 className="text-lg font-bold text-purple-700 mb-1">Built from Past 10 Years</h3>
-      <p className="text-sm text-gray-600">Based on actual CBSE board paper data.</p>
-    </div>
-  </div>
+            {/* Image 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <img src="/images/maths2.png" alt="Math Features Poster" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-purple-700 mb-1">Built from Past 10 Years</h3>
+                <p className="text-sm text-gray-600">Based on actual CBSE board paper data.</p>
+              </div>
+            </div>
 
-  {/* Image 3 */}
-  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-    <div className="aspect-video">
-      <img src="/images/maths3.png" alt="Chapter Page Preview" className="w-full h-full object-cover" />
-    </div>
-    <div className="p-4 text-center">
-      <h3 className="text-lg font-bold text-purple-700 mb-1">Chapter Breakdown</h3>
-      <p className="text-sm text-gray-600">Topic-wise focus areas to help you revise smarter.</p>
-    </div>
-  </div>
+            {/* Image 3 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <img src="/images/maths3.png" alt="Chapter Page Preview" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-purple-700 mb-1">Chapter Breakdown</h3>
+                <p className="text-sm text-gray-600">Topic-wise focus areas to help you revise smarter.</p>
+              </div>
+            </div>
 
-  {/* Image 4 */}
-  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-    <div className="aspect-video">
-      <img src="/images/maths4.png" alt="Marks Distribution Table" className="w-full h-full object-cover" />
-    </div>
-    <div className="p-4 text-center">
-      <h3 className="text-lg font-bold text-purple-700 mb-1">Trend Tables that Speak</h3>
-      <p className="text-sm text-gray-600">See exactly how often each chapter is asked.</p>
-    </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-</section>
-
+            {/* Image 4 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <img src="/images/maths4.png" alt="Marks Distribution Table" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-purple-700 mb-1">Trend Tables that Speak</h3>
+                <p className="text-sm text-gray-600">See exactly how often each chapter is asked.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Who Should Use It */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -258,7 +253,7 @@ const Maths = () => {
               <ExternalLink className="w-5 h-5 mr-2" />
               Buy Now – ₹199
             </Button>
-          <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border border-purple-600 bg-white text-purple-600 animate-blink">
+          <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border border-purple-600 bg-white text-purple-600 animate-flash">
                 <Link to="/combo">
                   <span className="font-medium">Save with Combo Pack</span>
                 </Link>
