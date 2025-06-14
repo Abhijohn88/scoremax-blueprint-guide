@@ -119,7 +119,7 @@ const Science = () => {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
         <div className="aspect-video p-0 m-0">
           <img 
-            src="/public/images/science1.jpg" 
+            src="/images/science1.jpg" 
             alt="Science Blueprint Page 1" 
             className="w-full h-full object-cover p-0 m-0"
           />
@@ -128,7 +128,7 @@ const Science = () => {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
         <div className="aspect-video p-0 m-0">
           <img 
-            src="/public/images/science2.jpg" 
+            src="/images/science2.jpg" 
             alt="Science Blueprint Page 2" 
             className="w-full h-full object-cover p-0 m-0"
           />
@@ -137,7 +137,7 @@ const Science = () => {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
         <div className="aspect-video p-0 m-0">
           <img 
-            src="/public/images/science3.jpg" 
+            src="/images/science3.jpg" 
             alt="Science Blueprint Page 3" 
             className="w-full h-full object-cover p-0 m-0"
           />
@@ -146,7 +146,7 @@ const Science = () => {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
         <div className="aspect-video p-0 m-0">
           <img 
-            src="/public/images/science4.jpg" 
+            src="/images/science4.jpg" 
             alt="Science Blueprint Page 4" 
             className="w-full h-full object-cover p-0 m-0"
           />
