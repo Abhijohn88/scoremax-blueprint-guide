@@ -103,72 +103,72 @@ const Combo = () => {
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               <div className="border-2 border-purple-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo1.png" 
+                    src="/images/combo1.png" 
                     alt="Combo Preview 1" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-teal-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo2.png" 
+                    src="/images/combo2.png" 
                     alt="Combo Preview 2" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-orange-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo3.png" 
+                    src="/images/combo3.png" 
                     alt="Combo Preview 3" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-blue-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo4.png" 
+                    src="/images/combo4.png" 
                     alt="Combo Preview 4" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-green-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo5.png" 
+                    src="/images/combo5.png" 
                     alt="Combo Preview 5" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-red-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo6.png" 
+                    src="/images/combo6.png" 
                     alt="Combo Preview 6" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-indigo-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo7.png" 
+                    src="/images/combo7.png" 
                     alt="Combo Preview 7" 
                     className="w-full h-full object-cover"
                   />
                 </AspectRatio>
               </div>
               <div className="border-2 border-pink-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <img 
-                    src="/public/images/combo8.png" 
+                    src="/images/combo8.png" 
                     alt="Combo Preview 8" 
                     className="w-full h-full object-cover"
                   />
