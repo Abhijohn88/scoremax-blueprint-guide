@@ -1,9 +1,10 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, ExternalLink, Zap, FlaskConical, Microscope } from 'lucide-react';
 
 const Science = () => {
   const scrollToBuySection = () => {
@@ -123,8 +124,8 @@ const Science = () => {
                 <img src="/images/science1.png" alt="Science Blueprint Page 1" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-lg font-bold text-teal-700 mb-1">Science Blueprint Overview</h3>
-                <p className="text-sm text-gray-600">Your guide to mastering science concepts strategically.</p>
+                <h3 className="text-lg font-bold text-teal-700 mb-1">Complete Blueprint Overview</h3>
+                <p className="text-sm text-gray-600">Covers diagrams, reactions & trend-based insights for all 3 sciences.</p>
               </div>
             </div>
 
@@ -134,8 +135,8 @@ const Science = () => {
                 <img src="/images/science2.png" alt="Science Blueprint Page 2" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-lg font-bold text-teal-700 mb-1">Chapter-wise Analysis</h3>
-                <p className="text-sm text-gray-600">Detailed breakdown of high-scoring topics.</p>
+                <h3 className="text-lg font-bold text-teal-700 mb-1">Repeated Question Patterns</h3>
+                <p className="text-sm text-gray-600">Know what's been asked year after year in board exams.</p>
               </div>
             </div>
 
@@ -145,8 +146,8 @@ const Science = () => {
                 <img src="/images/science3.png" alt="Science Blueprint Page 3" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-lg font-bold text-teal-700 mb-1">Topic Priority Guide</h3>
-                <p className="text-sm text-gray-600">Focus areas for physics, chemistry, and biology.</p>
+                <h3 className="text-lg font-bold text-teal-700 mb-1">Focus Areas Mapped</h3>
+                <p className="text-sm text-gray-600">Highlights scoring concepts in physics, chemistry & biology.</p>
               </div>
             </div>
 
@@ -156,8 +157,8 @@ const Science = () => {
                 <img src="/images/science4.png" alt="Science Blueprint Page 4" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-lg font-bold text-teal-700 mb-1">Scoring Patterns</h3>
-                <p className="text-sm text-gray-600">Data-driven insights for effective preparation.</p>
+                <h3 className="text-lg font-bold text-teal-700 mb-1">Marks Distribution by Chapter</h3>
+                <p className="text-sm text-gray-600">10-year heatmap to guide smart revision planning.</p>
               </div>
             </div>
           </div>
@@ -172,7 +173,7 @@ const Science = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-red-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/physics-icon.jpg" alt="Physics" className="w-8 h-8 p-0 m-0" />
+                  <Zap className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Physics</h3>
                 <p className="text-gray-600">Light, electricity, magnetic effects, and natural phenomena - focus on diagrams and numerical patterns</p>
@@ -181,7 +182,7 @@ const Science = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/chemistry-icon.jpg" alt="Chemistry" className="w-8 h-8 p-0 m-0" />
+                  <FlaskConical className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Chemistry</h3>
                 <p className="text-gray-600">Acids, bases, metals, carbon compounds - prioritize reactions and equations that score consistently</p>
@@ -190,7 +191,7 @@ const Science = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/biology-icon.jpg" alt="Biology" className="w-8 h-8 p-0 m-0" />
+                  <Microscope className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Biology</h3>
                 <p className="text-gray-600">Life processes, control systems, reproduction - master diagrams and processes that appear frequently</p>
@@ -357,3 +358,4 @@ const Science = () => {
 };
 
 export default Science;
+
