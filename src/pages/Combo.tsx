@@ -42,7 +42,7 @@ const Combo = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <div className="inline-flex items-center px-6 py-3 bg-orange-100 rounded-full text-orange-800 text-sm font-medium mb-6 animate-pulse">
-              <img src="/public/images/best-value-icon.jpg" alt="Best Value" className="w-4 h-4 mr-2" style={{padding: 0, margin: 0}} />
+              <img src="/images/best-value-icon.jpg" alt="Best Value" className="w-4 h-4 mr-2" />
               BEST VALUE
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -73,7 +73,7 @@ const Combo = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
                 onClick={handleBuyNow}
-                className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
+                className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
               >
                 <ExternalLink className="w-5 h-5 mr-2" />
                 Buy Now – ₹299
@@ -95,7 +95,7 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-blue-100">
               <CardContent className="p-6">
                 <div className="bg-blue-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/public/images/maths-icon.jpg" alt="Mathematics" className="w-6 h-6" style={{padding: 0, margin: 0}} />
+                  <img src="/images/maths-icon.jpg" alt="Mathematics" className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Maths Blueprint</h3>
                 <p className="text-gray-600">Strategic formula priorities and problem patterns based on 10-year trends</p>
@@ -104,7 +104,7 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-green-100">
               <CardContent className="p-6">
                 <div className="bg-green-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/public/images/science-icon.jpg" alt="Science" className="w-6 h-6" style={{padding: 0, margin: 0}} />
+                  <img src="/images/science-icon.jpg" alt="Science" className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science Blueprint</h3>
                 <p className="text-gray-600">Physics, Chemistry, Biology diagrams and concepts that score consistently</p>
@@ -113,7 +113,7 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-100">
               <CardContent className="p-6">
                 <div className="bg-purple-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/public/images/social-icon.jpg" alt="Social Science" className="w-6 h-6" style={{padding: 0, margin: 0}} />
+                  <img src="/images/social-icon.jpg" alt="Social Science" className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science Blueprint</h3>
                 <p className="text-gray-600">History dates, geography maps, and civic concepts that appear frequently</p>
@@ -141,81 +141,120 @@ const Combo = () => {
         </div>
       </section>
 
-      {/* 3x3 Product Images Grid */}
+      {/* 2x4 Product Images Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What's Inside? | Preview the Pages</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
-              <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-1.jpg" alt="Combo Preview 1" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-purple-600 font-semibold text-sm">combo1.png</p>
-                </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo1.png" 
+                  alt="All Subjects, One Blueprint" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">All Subjects, One Blueprint</h3>
+                <p className="text-sm text-gray-600">Maths, Science & Social — everything students need, in one compact guide.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
-              <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-2.jpg" alt="Combo Preview 2" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-purple-600 font-semibold text-sm">combo2.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo2.png" 
+                  alt="Simplified for Quick Revision" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">Simplified for Quick Revision</h3>
+                <p className="text-sm text-gray-600">Core formulas, concepts, diagrams & case studies — all high-yield.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-100">
-              <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-3.jpg" alt="Combo Preview 3" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-purple-600 font-semibold text-sm">combo3.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo3.png" 
+                  alt="Social Science Made Easy" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">Social Science Made Easy</h3>
+                <p className="text-sm text-gray-600">Important chapters broken down into scoring-friendly pointers.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
-              <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-4.jpg" alt="Combo Preview 4" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-teal-600 font-semibold text-sm">combo4.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo4.png" 
+                  alt="10-Year Trends for SST" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">10-Year Trends for SST</h3>
+                <p className="text-sm text-gray-600">Identify scoring patterns in History, Civics, Geography & Eco.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
-              <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-5.jpg" alt="Combo Preview 5" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-teal-600 font-semibold text-sm">combo5.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-blue-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo5.png" 
+                  alt="Science: What to Focus On" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">Science: What to Focus On</h3>
+                <p className="text-sm text-gray-600">Diagrams, reactions & high-weightage concepts, decoded by trends.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-teal-100">
-              <div className="aspect-square bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-6.jpg" alt="Combo Preview 6" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-teal-600 font-semibold text-sm">combo6.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-blue-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo6.png" 
+                  alt="Repeated Questions: Science" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">Repeated Questions: Science</h3>
+                <p className="text-sm text-gray-600">Know which topics keep reappearing across Physics, Chem & Bio.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
-              <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-7.jpg" alt="Combo Preview 7" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-orange-600 font-semibold text-sm">combo7.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo7.png" 
+                  alt="Maths: Chapter Clarity" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">Maths: Chapter Clarity</h3>
+                <p className="text-sm text-gray-600">Each chapter's scoring potential explained with expert summaries.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
-              <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-8.jpg" alt="Combo Preview 8" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-orange-600 font-semibold text-sm">combo8.png</p>
-                </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200">
+              <div className="aspect-[3/4] relative">
+                <img 
+                  src="/images/combo8.png" 
+                  alt="10-Year Maths Trend Graphs" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-orange-100">
-              <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                <div className="text-center">
-                  <img src="/public/images/combo-preview-9.jpg" alt="Combo Preview 9" className="w-12 h-12 mx-auto mb-2" style={{padding: 0, margin: '0 auto 8px'}} />
-                  <p className="text-orange-600 font-semibold text-sm">combo9.png</p>
-                </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-gray-900 mb-1">10-Year Maths Trend Graphs</h3>
+                <p className="text-sm text-gray-600">Strategic overview of mark distribution across every maths chapter.</p>
               </div>
             </div>
           </div>
