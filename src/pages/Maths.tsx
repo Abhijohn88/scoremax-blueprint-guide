@@ -55,10 +55,9 @@ const Maths = () => {
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Math Blueprint
                 </Button>
-            <Button asChild className="px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full shadow-md border border-purple-300 animate-flash">
-              <Link to="/combo">Save with Combo Pack</Link>
-            </Button>
-
+                <Button asChild className="px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full shadow-md border-2 border-purple-600 btn-flash">
+                  <Link to="/combo">Save with Combo Pack</Link>
+                </Button>
               </div>
             </div>
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white">
@@ -253,11 +252,11 @@ const Maths = () => {
               <ExternalLink className="w-5 h-5 mr-2" />
               Buy Now – ₹199
             </Button>
-          <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border border-purple-600 bg-white text-purple-600 animate-flash">
-                <Link to="/combo">
-                  <span className="font-medium">Save with Combo Pack</span>
-                </Link>
-              </Button>
+            <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-2 border-white text-white bg-transparent hover:bg-white hover:text-purple-600 btn-flash">
+              <Link to="/combo">
+                <span className="font-medium">Save with Combo Pack</span>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

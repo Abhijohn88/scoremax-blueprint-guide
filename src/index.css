@@ -100,3 +100,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .btn-flash {
+    animation: flash-animation 2s ease-in-out infinite;
+  }
+  
+  @keyframes flash-animation {
+    0%, 100% {
+      background-color: white;
+      color: currentColor;
+      border-color: currentColor;
+    }
+    50% {
+      background-color: currentColor;
+      color: white;
+      border-color: currentColor;
+    }
+  }
+}

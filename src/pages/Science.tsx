@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -64,7 +63,7 @@ const Science = () => {
                 <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Science Blueprint
                 </Button>
-                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-teal-600 text-teal-600 bg-white hover:bg-teal-50 animate-flash">
+                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-2 border-teal-600 text-teal-600 bg-white hover:bg-teal-50 btn-flash">
                   <Link to="/combo">View Combo Pack</Link>
                 </Button>
               </div>
@@ -303,7 +302,7 @@ const Science = () => {
               <ExternalLink className="w-5 h-5 mr-2" />
               Buy Now – ₹199
             </Button>
-            <Button asChild variant="outline" className="border-teal-600 text-teal-600 bg-white hover:bg-teal-50 px-8 py-3 text-lg rounded-full animate-flash">
+            <Button asChild variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-teal-600 px-8 py-3 text-lg rounded-full btn-flash">
               <Link to="/combo">Save with Combo Pack</Link>
             </Button>
           </div>
