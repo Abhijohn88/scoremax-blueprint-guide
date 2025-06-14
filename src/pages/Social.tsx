@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -104,42 +105,51 @@ const Social = () => {
       {/* What's Inside - Product Showcase Images */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What's Inside? | Preview the Pages</h2>
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-              <div className="aspect-video p-0 m-0">
-                <img 
-                  src="/public/images/social1.jpg" 
-                  alt="Social Science Blueprint Page 1" 
-                  className="w-full h-full object-cover p-0 m-0"
-                />
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            What's Inside? | Preview the Pages
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {/* Image 1 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-[3/4]">
+                <img src="/images/social1.png" alt="ScoreMAX Social Blueprint Overview" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-orange-700 mb-1">Complete Blueprint Overview</h3>
+                <p className="text-sm text-gray-600">Simplifies case studies, map skills & priority topics across all 4 subjects.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-              <div className="aspect-video p-0 m-0">
-                <img 
-                  src="/public/images/social2.jpg" 
-                  alt="Social Science Blueprint Page 2" 
-                  className="w-full h-full object-cover p-0 m-0"
-                />
+
+            {/* Image 2 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-[3/4]">
+                <img src="/images/social2.png" alt="Social Science Board Trends" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-orange-700 mb-1">Board Trends Decoded</h3>
+                <p className="text-sm text-gray-600">Covers repeated topics, scoring chapters & subject-wise time allocation.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-              <div className="aspect-video p-0 m-0">
-                <img 
-                  src="/public/images/social3.jpg" 
-                  alt="Social Science Blueprint Page 3" 
-                  className="w-full h-full object-cover p-0 m-0"
-                />
+
+            {/* Image 3 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-[3/4]">
+                <img src="/images/social3.png" alt="Social Science Chapter Focus" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-orange-700 mb-1">Scoring Focus by Chapter</h3>
+                <p className="text-sm text-gray-600">Targets civics, history, geo & economics chapters with scoring insights.</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-              <div className="aspect-video p-0 m-0">
-                <img 
-                  src="/public/images/social4.jpg" 
-                  alt="Social Science Blueprint Page 4" 
-                  className="w-full h-full object-cover p-0 m-0"
-                />
+
+            {/* Image 4 */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-[3/4]">
+                <img src="/images/social4.png" alt="Social Science Marks Distribution" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold text-orange-700 mb-1">Marks Distribution by Chapter</h3>
+                <p className="text-sm text-gray-600">10-year board analysis to guide efficient last-minute prep.</p>
               </div>
             </div>
           </div>
@@ -147,14 +157,14 @@ const Social = () => {
       </section>
 
       {/* Subject Breakdown */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">All Four Areas Covered</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-red-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/history-icon.jpg" alt="History" className="w-8 h-8 p-0 m-0" />
+                  <span className="text-2xl">📜</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">History</h3>
                 <p className="text-gray-600 text-sm">Key dates, movements, and personalities that frequently appear</p>
@@ -163,7 +173,7 @@ const Social = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/geography-icon.jpg" alt="Geography" className="w-8 h-8 p-0 m-0" />
+                  <span className="text-2xl">🗺️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Geography</h3>
                 <p className="text-gray-600 text-sm">Important maps, resources, and locations to prioritize</p>
@@ -172,7 +182,7 @@ const Social = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/civics-icon.jpg" alt="Civics" className="w-8 h-8 p-0 m-0" />
+                  <span className="text-2xl">🏛️</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Civics</h3>
                 <p className="text-gray-600 text-sm">Government processes and concepts that score consistently</p>
@@ -181,7 +191,7 @@ const Social = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
                 <div className="bg-yellow-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img src="/public/images/economics-icon.jpg" alt="Economics" className="w-8 h-8 p-0 m-0" />
+                  <span className="text-2xl">💰</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Economics</h3>
                 <p className="text-gray-600 text-sm">Key economic concepts and sectors to focus on</p>
@@ -194,35 +204,35 @@ const Social = () => {
       {/* Who It's For */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-6">
-            <Users className="w-8 h-8 text-purple-600 mx-auto" />
+          <div className="bg-orange-100 p-4 rounded-full w-16 h-16 mx-auto mb-6">
+            <Users className="w-8 h-8 text-orange-600 mx-auto" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Who It's For</h2>
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Who Should Use It</h2>
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <blockquote className="text-xl text-gray-700 italic leading-relaxed">
-              "Students who want to <strong className="text-purple-600">revise smart</strong> before the boards, 
-              not <strong className="text-gray-500">start from scratch.</strong> 
-              Perfect for focused preparation when you need to prioritize what matters most in Social Science."
+              "Students who've <strong className="text-orange-600">studied once</strong> and want to 
+              <strong className="text-orange-600"> revise smartly.</strong> 
+              Perfect for focused preparation in the final months."
             </blockquote>
           </div>
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Real Testimonials */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What Students Say</h2>
-          <Card className="bg-gradient-to-r from-purple-50 to-blue-50 border-0 shadow-lg">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Real Testimonials</h2>
+          <Card className="bg-gradient-to-r from-orange-50 to-blue-50 border-0 shadow-lg">
             <CardContent className="p-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
                   P
                 </div>
                 <div>
                   <blockquote className="text-lg text-gray-700 mb-4 italic">
                     "The map practice priorities helped me so much! I knew exactly which geographical features and historical locations to focus on for my boards."
                   </blockquote>
-                  <p className="text-purple-600 font-medium">— Priya M., Class 10 Student</p>
+                  <p className="text-orange-600 font-medium">— Priya M., Class 10 Student</p>
                 </div>
               </div>
             </CardContent>
@@ -237,20 +247,20 @@ const Social = () => {
           <div className="space-y-6">
             <Card className="shadow-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Does this cover full chapters?</h3>
-                <p className="text-gray-600">➤ No. It highlights scoring topics within chapters, based on trends. Use it with your textbook for complete understanding.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Does it explain chapters?</h3>
+                <p className="text-gray-600">➤ No. It points to scoring parts only. No chapter-wise teaching.</p>
               </CardContent>
             </Card>
             <Card className="shadow-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Is it a question bank or notes?</h3>
-                <p className="text-gray-600">➤ Neither. It's a visual trend guide to help you focus on maps, dates, and concepts that matter most.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Is it complete syllabus?</h3>
+                <p className="text-gray-600">➤ It helps prioritize. Coverage isn't the aim — scoring is.</p>
               </CardContent>
             </Card>
             <Card className="shadow-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Will it teach me topics?</h3>
-                <p className="text-gray-600">➤ No. It points you to high-priority topics — not explain them. Perfect for strategic revision planning.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I use it best?</h3>
+                <p className="text-gray-600">➤ Use this as a checklist to verify your prep is aligned with what's most often asked.</p>
               </CardContent>
             </Card>
           </div>
@@ -271,7 +281,7 @@ const Social = () => {
             </div>
           </div>
           
-          <p className="text-orange-100 text-lg mb-6">Focus on what scores. Skip what doesn't.</p>
+          <p className="text-orange-100 text-lg mb-6">Get strategic with your revision. Know what to prioritize.</p>
           
           {/* Delivery Info */}
           <div className="bg-orange-800 bg-opacity-50 rounded-lg p-4 mb-8 text-orange-100">
