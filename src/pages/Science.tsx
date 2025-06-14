@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -118,7 +119,7 @@ const Science = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Image 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/science1.png" alt="Science Blueprint Page 1" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
@@ -129,7 +130,7 @@ const Science = () => {
 
             {/* Image 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/science2.png" alt="Science Blueprint Page 2" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
@@ -140,7 +141,7 @@ const Science = () => {
 
             {/* Image 3 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/science3.png" alt="Science Blueprint Page 3" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
@@ -151,7 +152,7 @@ const Science = () => {
 
             {/* Image 4 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/science4.png" alt="Science Blueprint Page 4" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
