@@ -228,50 +228,6 @@ const Combo = () => {
               </div>
             </div>
           </div>
-
-          {/* Combo Video Embeds */}
-          <div className="space-y-8">
-            <div className="max-w-4xl mx-auto">
-              <Card className="overflow-hidden shadow-xl">
-                <CardContent className="p-0">
-                  <div className="aspect-video bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 flex items-center justify-center relative">
-                    <div className="text-center text-white">
-                      <Play className="w-20 h-20 mx-auto mb-4 opacity-80" />
-                      <h3 className="text-3xl font-bold mb-3">combo_video1.mp4</h3>
-                      <p className="text-orange-100 text-lg">Complete Combo Walkthrough</p>
-                    </div>
-                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden shadow-xl">
-                <CardContent className="p-0">
-                  <div className="aspect-video bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center relative">
-                    <div className="text-center text-white">
-                      <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                      <h3 className="text-xl font-bold mb-2">combo_video2.mp4</h3>
-                      <p className="text-blue-100">Study Strategy Guide</p>
-                    </div>
-                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden shadow-xl">
-                <CardContent className="p-0">
-                  <div className="aspect-video bg-gradient-to-r from-teal-500 to-green-500 flex items-center justify-center relative">
-                    <div className="text-center text-white">
-                      <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                      <h3 className="text-xl font-bold mb-2">combo_video3.mp4</h3>
-                      <p className="text-teal-100">Quick Tips</p>
-                    </div>
-                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
         </div>
       </section>
 
