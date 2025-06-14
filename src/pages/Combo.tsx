@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play, ExternalLink, SquareRoot, Flask, Book } from 'lucide-react';
 
 const Combo = () => {
   const scrollToCheckout = () => {
@@ -96,7 +96,7 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-blue-100">
               <CardContent className="p-6">
                 <div className="bg-blue-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/images/maths-icon.jpg" alt="Mathematics" className="w-6 h-6" />
+                  <SquareRoot className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Maths Blueprint</h3>
                 <p className="text-gray-600">Strategic formula priorities and problem patterns based on 10-year trends</p>
@@ -105,7 +105,7 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-green-100">
               <CardContent className="p-6">
                 <div className="bg-green-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/images/science-icon.jpg" alt="Science" className="w-6 h-6" />
+                  <Flask className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science Blueprint</h3>
                 <p className="text-gray-600">Physics, Chemistry, Biology diagrams and concepts that score consistently</p>
@@ -114,7 +114,7 @@ const Combo = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-100">
               <CardContent className="p-6">
                 <div className="bg-purple-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/images/social-icon.jpg" alt="Social Science" className="w-6 h-6" />
+                  <Book className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science Blueprint</h3>
                 <p className="text-gray-600">History dates, geography maps, and civic concepts that appear frequently</p>
