@@ -56,10 +56,11 @@ const Maths = () => {
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Math Blueprint
                 </Button>
-            <Button asChild className="px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full shadow-md hover:animate-pulse border border-purple-300"
+            <Button asChild className="px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full shadow-md border border-purple-300 animate-pulse"
 >
   <Link to="/combo">Save with Combo Pack</Link>
 </Button>
+
               </div>
             </div>
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white">
