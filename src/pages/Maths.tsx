@@ -110,7 +110,7 @@ const Maths = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Image 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/maths1.png" alt="ScoreMAX Book Mockup" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
@@ -121,7 +121,7 @@ const Maths = () => {
 
             {/* Image 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/maths2.png" alt="Math Features Poster" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
@@ -132,7 +132,7 @@ const Maths = () => {
 
             {/* Image 3 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/maths3.png" alt="Chapter Page Preview" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
@@ -143,7 +143,7 @@ const Maths = () => {
 
             {/* Image 4 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-[3/4]">
                 <img src="/images/maths4.png" alt="Marks Distribution Table" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 text-center">
