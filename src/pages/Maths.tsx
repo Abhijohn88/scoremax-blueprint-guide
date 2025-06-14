@@ -56,9 +56,13 @@ const Maths = () => {
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg rounded-full">
                   Get Math Blueprint
                 </Button>
-                <Button asChild variant="outline" className="px-8 py-3 text-lg rounded-full border-purple-300 text-purple-600 hover:bg-purple-50">
-                  <Link to="/combo">View Combo Pack</Link>
-                </Button>
+              <Button asChild className="group relative px-8 py-3 text-lg font-medium text-purple-600 bg-white rounded-full overflow-hidden shadow-md hover:text-white transition duration-300 ease-in-out"
+                  >
+                    <Link to="/combo">
+                      <span className="relative z-10">Save with Combo Pack</span>
+                      <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-700 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-full"></span>
+                    </Link>
+                  </Button>
               </div>
             </div>
             <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white">
