@@ -137,15 +137,6 @@ const Combo = () => {
                 <p className="text-gray-600">Quick-reference guides to prioritize your study time effectively</p>
               </CardContent>
             </Card>
-            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-red-100">
-              <CardContent className="p-6">
-                <div className="bg-red-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Calendar className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">30-Day CBSE Final Prep Calendar</h3>
-                <p className="text-gray-600">Day-by-day strategic schedule for optimal board exam preparation</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
