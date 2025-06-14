@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users, Play, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, ExternalLink } from 'lucide-react';
 
 const Social = () => {
   const scrollToBuySection = () => {
@@ -142,22 +142,6 @@ const Social = () => {
                 />
               </div>
             </div>
-          </div>
-
-          {/* Subject Video Embed */}
-          <div className="max-w-4xl mx-auto">
-            <Card className="overflow-hidden shadow-xl border-2 border-orange-100">
-              <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center relative">
-                  <div className="text-center text-white">
-                    <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                    <h3 className="text-2xl font-bold mb-2">social_video.mp4</h3>
-                    <p className="text-orange-100">Master maps, dates, and concepts that score consistently</p>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>

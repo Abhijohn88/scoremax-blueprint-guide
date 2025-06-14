@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Target, Clock, CheckCircle, Users, Play, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Target, Clock, CheckCircle, Users, ExternalLink } from 'lucide-react';
 
 const Science = () => {
   const scrollToBuySection = () => {
@@ -110,50 +111,50 @@ const Science = () => {
       </section>
 
       {/* What's Inside - Product Showcase Images */}
-     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-      What's Inside? | Preview the Pages
-    </h2>
-    <div className="grid md:grid-cols-4 gap-8 mb-12">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-        <div className="aspect-video p-0 m-0">
-          <img 
-            src="/images/science1.jpg" 
-            alt="Science Blueprint Page 1" 
-            className="w-full h-full object-cover p-0 m-0"
-          />
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            What's Inside? | Preview the Pages
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/images/science1.jpg" 
+                  alt="Science Blueprint Page 1" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/images/science2.jpg" 
+                  alt="Science Blueprint Page 2" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/images/science3.jpg" 
+                  alt="Science Blueprint Page 3" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
+              <div className="aspect-video p-0 m-0">
+                <img 
+                  src="/images/science4.jpg" 
+                  alt="Science Blueprint Page 4" 
+                  className="w-full h-full object-cover p-0 m-0"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-        <div className="aspect-video p-0 m-0">
-          <img 
-            src="/images/science2.jpg" 
-            alt="Science Blueprint Page 2" 
-            className="w-full h-full object-cover p-0 m-0"
-          />
-        </div>
-      </div>
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-        <div className="aspect-video p-0 m-0">
-          <img 
-            src="/images/science3.jpg" 
-            alt="Science Blueprint Page 3" 
-            className="w-full h-full object-cover p-0 m-0"
-          />
-        </div>
-      </div>
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden p-0 m-0 border-0">
-        <div className="aspect-video p-0 m-0">
-          <img 
-            src="/images/science4.jpg" 
-            alt="Science Blueprint Page 4" 
-            className="w-full h-full object-cover p-0 m-0"
-          />
-        </div>
-      </div>
-    </div>
-
       </section>
 
       {/* Subject Breakdown */}
