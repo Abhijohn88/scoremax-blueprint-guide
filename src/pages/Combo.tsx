@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play, ExternalLink, Calculator, Beaker, BookOpen } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { ArrowLeft, Star, CheckCircle, Calendar, Target, TrendingUp, Filter, Play, ExternalLink, Calculator, Beaker, BookOpen, Facebook, Instagram } from 'lucide-react';
 
 const Combo = () => {
 
@@ -27,7 +29,7 @@ const Combo = () => {
               <Link to="/maths" className="text-gray-700 hover:text-purple-600 transition-colors">Maths</Link>
               <Link to="/science" className="text-gray-700 hover:text-teal-600 transition-colors">Science</Link>
               <Link to="/social" className="text-gray-700 hover:text-orange-600 transition-colors">Social</Link>
-              <Link to="/combo" className="text-gray-700 hover:text-blue-600 transition-colors">Combo</Link>
+              <Link to="/combo" className="text-blue-600 font-semibold">Combo</Link>
             </div>
           </div>
         </div>
@@ -65,33 +67,119 @@ const Combo = () => {
             What's Inside the Combo
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-blue-100">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-100">
               <CardContent className="p-6">
-                <div className="bg-blue-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-purple-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Calculator className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Maths Blueprint</h3>
                 <p className="text-gray-600">Strategic formula priorities and problem patterns based on 10-year trends</p>
               </CardContent>
             </Card>
-            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-green-100">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-teal-100">
               <CardContent className="p-6">
-                <div className="bg-green-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-teal-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Beaker className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Science Blueprint</h3>
                 <p className="text-gray-600">Physics, Chemistry, Biology diagrams and concepts that score consistently</p>
               </CardContent>
             </Card>
-            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-100">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2 border-orange-100">
               <CardContent className="p-6">
-                <div className="bg-purple-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-orange-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <BookOpen className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Social Science Blueprint</h3>
                 <p className="text-gray-600">History dates, geography maps, and civic concepts that appear frequently</p>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Image Preview Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
+              Preview of What You'll Get
+            </h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+              <div className="border-2 border-purple-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo1.png" 
+                    alt="Combo Preview 1" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-teal-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo2.png" 
+                    alt="Combo Preview 2" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-orange-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo3.png" 
+                    alt="Combo Preview 3" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-blue-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo4.png" 
+                    alt="Combo Preview 4" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-green-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo5.png" 
+                    alt="Combo Preview 5" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-red-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo6.png" 
+                    alt="Combo Preview 6" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-indigo-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo7.png" 
+                    alt="Combo Preview 7" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <div className="border-2 border-pink-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <AspectRatio ratio={4 / 3}>
+                  <img 
+                    src="/public/images/combo8.png" 
+                    alt="Combo Preview 8" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
+            <div className="text-center">
+              <Button onClick={scrollToCheckout} className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                Buy Now - ₹299
+              </Button>
+            </div>
           </div>
 
           {/* Bonus Planning Tools */}
@@ -234,6 +322,24 @@ const Combo = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.facebook.com/scoremaxblueprint" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-500 transition-colors"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/scoremax.blueprint" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-pink-500 transition-colors"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8">
