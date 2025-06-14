@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Target, Clock, TrendingUp } from 'lucide-react';
+import { CheckCircle, Target, Clock, TrendingUp, Facebook, Instagram } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -250,6 +251,24 @@ const Index = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.facebook.com/scoremaxblueprint" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/scoremax.blueprint" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-pink-400 transition-colors"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8">
