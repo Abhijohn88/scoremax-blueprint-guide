@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -257,6 +258,17 @@ const Combo = () => {
                 <p className="text-sm text-gray-600">Strategic overview of mark distribution across every maths chapter.</p>
               </div>
             </div>
+          </div>
+          
+          {/* Buy Now Button below images */}
+          <div className="text-center">
+            <Button 
+              onClick={handleBuyNow}
+              className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold"
+            >
+              <ExternalLink className="w-5 h-5 mr-2" />
+              Buy Now – ₹299
+            </Button>
           </div>
         </div>
       </section>
