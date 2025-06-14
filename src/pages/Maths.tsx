@@ -258,12 +258,11 @@ const Maths = () => {
               <ExternalLink className="w-5 h-5 mr-2" />
               Buy Now – ₹199
             </Button>
-           <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 text-lg rounded-full">
-  <Link to="/combo">
-    <span className="animate-blink">Save with Combo Pack</span>
-  </Link>
-</Button>
-
+            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 text-lg rounded-full">
+              <Link to="/combo">
+                <span className="animate-blink">Save with Combo Pack</span>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
